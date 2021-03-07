@@ -357,10 +357,10 @@
 
 	// Menu Active Color 
 
-	$(".main-menu .navbar-nav .nav-link").on("mouseover", function () {
-		$(".main-menu .navbar-nav .nav-link").removeClass("active");
-		$(this).addClass("active");
-	});
+	// $(".main-menu .navbar-nav .nav-link").on("mouseover", function () {
+	// 	$(".main-menu .navbar-nav .nav-link").removeClass("active");
+	// 	$(this).addClass("active");
+	// });
 
 	// Preloader
 	setTimeout(function () {

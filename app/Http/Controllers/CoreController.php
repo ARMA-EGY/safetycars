@@ -35,21 +35,81 @@ class CoreController extends Controller
     //======== Home Page ======== 
     public function index()
     {
-        $last_blogs                   = Blog::orderBy('id','desc')->limit(4)->get();
-
         $page                         = Page::where('name','Home')->first();
         $seo                          = Seo::where('page_token',$page->token)->first();
         $socials                      = Social::all();
-        $logo                         = Logo::first();
         
         $data = [
             'page_token'=>$page->token,
             'seo'=>$seo,
             'socials'=>$socials,
-            'logo'=>$logo,
         ];
 
         return view('welcome')->with($data);     
+    }
+
+    //======== About Page ======== 
+    public function about()
+    {
+        $page                         = Page::where('name','About')->first();
+        $seo                          = Seo::where('page_token',$page->token)->first();
+        $socials                      = Social::all();
+        
+        $data = [
+            'page_token'=>$page->token,
+            'seo'=>$seo,
+            'socials'=>$socials,
+        ];
+
+        return view('about')->with($data);     
+    }
+
+    //======== Products Page ======== 
+    public function products()
+    {
+        $page                         = Page::where('name','Products')->first();
+        $seo                          = Seo::where('page_token',$page->token)->first();
+        $socials                      = Social::all();
+        
+        $data = [
+            'page_token'=>$page->token,
+            'seo'=>$seo,
+            'socials'=>$socials,
+        ];
+
+        return view('products')->with($data);     
+    }
+
+    //======== Enterprise Page ======== 
+    public function enterprise()
+    {
+        $page                         = Page::where('name','Enterprise')->first();
+        $seo                          = Seo::where('page_token',$page->token)->first();
+        $socials                      = Social::all();
+        
+        $data = [
+            'page_token'=>$page->token,
+            'seo'=>$seo,
+            'socials'=>$socials,
+        ];
+
+        return view('enterprise')->with($data);     
+    }
+
+    //======== Contact Page ======== 
+    public function contact()
+    {
+        $page                         = Page::where('name','Contact')->first();
+        $seo                          = Seo::where('page_token',$page->token)->first();
+        $socials                      = Social::all();
+        
+        $data = [
+            'page_token'=>$page->token,
+            'seo'=>$seo,
+            'socials'=>$socials,
+        ];
+
+        return view('contact')->with($data);     
     }
 
 

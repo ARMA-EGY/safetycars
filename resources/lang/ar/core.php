@@ -13,8 +13,10 @@ return [
 
     "HOME" => "الرئيسية",
     "ABOUT" => "عنا",
-    "PRODUCTS" => "المنتجات",
+    "PRODUCTS" => "منتجاتنا",
     "OUR-PRODUCTS" => "منتجاتنا",
+    "FAQ" => "الاسئلة الشائعة",
+    "ENTERPRISE" => "الشركات",
     "CONTACT-US" => "تواصل معنا",
     "CONTACT-INFO" => "معلومات التواصل",
     "LOGIN" => "تسجيل الدخول",

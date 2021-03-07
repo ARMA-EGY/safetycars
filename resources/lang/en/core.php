@@ -14,6 +14,8 @@ return [
     "HOME" => "Home",
     "ABOUT" => "About",
     "PRODUCTS" => "Products",
+    "FAQ" => "FAQ",
+    "ENTERPRISE" => "Enterprise",
     "OUR-PRODUCTS" => "Our Products",
     "CONTACT-US" => "Contact Us",
     "CONTACT-INFO" => "Contact Info",
