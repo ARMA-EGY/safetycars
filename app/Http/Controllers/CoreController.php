@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 use App\Http\Requests\MessageRequest;
+use App\Http\Requests\EnterpriseRequest;
 use App\Http\Requests\SubscriberRequest;
 use App\Mail\ContactUs;
 use Mail; 
@@ -28,6 +29,7 @@ use App\Logo;
 use App\Seo;
 use App\Category;
 use App\Contact;
+use App\enterprise;
 
 
 class CoreController extends Controller
@@ -47,6 +49,7 @@ class CoreController extends Controller
 
         return view('welcome')->with($data);     
     }
+
 
     //======== About Page ======== 
     public function about()
@@ -109,9 +112,37 @@ class CoreController extends Controller
             'socials'=>$socials,
         ];
 
-        return view('contact')->with($data);     
+        return view('contactus')->with($data);     
     }
 
+    
+    public function enterprisesubmit(EnterpriseRequest $request)
+    {
+        $enterprise =  enterprise::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'phone' => $request->phone,
+            'company' => $request->company,
+            'device_num' => $request->device_num,
+            
+        ]);
+
+
+        if($enterprise)
+        {
+            return response()->json([
+                'status' => 'true',
+                'msg' => 'success'
+            ]) ;
+        }
+        else
+        {
+            return response()->json([
+                'status' => 'false',
+                'msg' => 'error'
+            ]) ;
+        }
+    }
 
     //======== Single Blog Page ======== 
     public function singleblog($url)
@@ -152,6 +183,8 @@ class CoreController extends Controller
             'email' => $request->email,
             'subject' => $request->subject,
             'message' => $request->message,
+            'phone' => $request->phone,
+            
         ]);
 
         $receiver_email     = ReceiverEmail::first();
@@ -161,6 +194,7 @@ class CoreController extends Controller
         'email' => $request->email,
         'subject' => $request->subject,
         'message' => $request->message,
+        'phone' => $request->phone,
         ];
 
         Mail::to($receiver_email->email)->send(new ContactUs($data));
@@ -242,5 +276,7 @@ class CoreController extends Controller
         }
 
     }
+
+
 
 }
