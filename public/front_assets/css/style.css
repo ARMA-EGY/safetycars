@@ -1197,9 +1197,9 @@ textarea:focus::-webkit-input-placeholder {
 	margin-right: 35px;
 }
 
-.main-menu li.nav-item:last-child {
+/* .main-menu li.nav-item:last-child {
 	margin-right: 0;
-}
+} */
 
 .main-menu .navbar-nav .nav-link {
 	text-transform: uppercase;
@@ -1343,9 +1343,9 @@ textarea:focus::-webkit-input-placeholder {
 
 .single-slide-item h1 {
 	color: #fff;
-	font-size: 75px;
+	font-size: 60px;
 	font-weight: 500;
-	line-height: 90px;
+	line-height: 70px;
 	letter-spacing: 1px;
 	margin: 30px 0;
 }
@@ -1565,7 +1565,6 @@ textarea:focus::-webkit-input-placeholder {
 	font-weight: 600;
 	line-height: 120px;
 	background-color: #0099F7;
-	background-image: url(../img/trans-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -4137,5 +4136,166 @@ a.reply-btn {
 	100% {
 		-webkit-transform: translateX(-1px) rotate(0);
 		transform: translateX(-1px) rotate(0);
+	}
+}
+
+/* =-=-=-=-=-=-= Our Apps & Our Process =-=-=-=-=-=-= */
+
+.section-padding-100 {
+    padding: 100px 0;
+}
+
+.parallex {
+    color: #fff !important;
+    position: relative;
+    z-index: 44;
+}
+
+.parallex::before {
+    background: rgba(1, 109, 182, 0.9) !important;
+}
+
+.parallex::before {
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.our-app p {
+    color: #fff;
+}
+.our-app {
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.our-app .img-absolute {
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: -135px;
+}
+.our-app .btn-bordered {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.our-app .btn {
+    color: #fff !important;
+    margin: 5px 0;
+    padding: 10px 15px;
+}
+.our-app .btn i {
+    font-size: 24px;
+    padding-right: 15px;
+    vertical-align: middle;
+    color: #fff;
+}
+.our-app h3 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.4em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.our-app p {
+    margin-bottom: 20px;
+}
+.our-process.process-steps ul::before {
+    top: 70px;
+}
+.our-process ul::before {
+    border-top: 1px dashed #bbb;
+    content: "";
+    display: block;
+    height: 0;
+    left: 80px;
+    position: absolute;
+    width: 85%;
+}
+.our-process {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.our-process ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.our-process.process-steps li {
+    width: 25%;
+}
+.our-process ul li {
+    display: inline-block;
+    float: left;
+    margin: 0;
+    padding-top: 6px;
+}
+.process-icon {
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #016db6;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    transition: background 0.3s ease 0s, color 0.3s ease 0s, box-shadow 0.3s ease 0s;
+}
+.our-process.process-steps .process-icon {
+    height: 140px;
+    text-align: center;
+    width: 140px;
+}
+.our-process.process-steps .process-icon i {
+    font-size: 60px;
+    line-height: 140px;
+}
+.process-icon i {
+    color: #016db6;
+    display: inline-block;
+}
+.our-process ul li:hover i {
+    animation: 0.3s ease 0s normal forwards 1 running toRightFromLeft;
+    color: #fff !important;
+}
+.our-process ul li:hover .process-icon {
+    box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.1);
+    background: #016db6;
+}
+.our-process.process-steps li h3, .our-process.process-steps li p {
+    padding: 0 15px;
+}
+.our-process ul li h3 {
+    display: inline-block;
+    margin: 15px auto 0;
+    position: relative;
+    font-size: 20px;
+}
+.our-process ul li h2 {
+    color: #323232;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 0;
+    text-transform: capitalize;
+}
+
+@media (min-width: 320px) and (max-width: 767px)
+{
+	.our-app .img-absolute {
+		left: 0;
+		margin: 0 auto;
+		position: relative;
+		right: 0;
+		top: 0;
 	}
 }

@@ -5,10 +5,9 @@
 @section('content')
 
     <!-- Hero Area -->
-
  	<div class="homepage-slides owl-carousel">
 
-        <div class="single-slide-item" style="background-image: url(https://preview.colorlib.com/theme/carrentals/images/hero_1_a.jpg);">
+        <div class="single-slide-item" style="background-image: url({{ asset('front_assets/img/cover.webp') }});">
             <div class="overlay"></div>
             <div class="hero-area-content">
                 <div class="container">
@@ -16,7 +15,7 @@
                         <div class="col-lg-12 wow fadeInUp animated" data-wow-delay=".3s">
                             <div class="section-title">
                                <h1>Best Solutions for<br> <b>Car Security</b> Services</h1>
-                               <p> Our Devices provide a full solution to keep your vehicle safe all the time .<br>By Protecting you and all types of vehicles from theft.</p>
+                               <p> Our Devices provide a full solution to keep your vehicle safe all the time.<br>By Protecting you and all types of vehicles from theft.</p>
                             </div>
                             <a href="#" class="main-btn">Buy Now</a>
                         </div>
@@ -28,7 +27,6 @@
     </div>
 
     <!-- Feature Section -->
-
 	<div class="feature-area">
 		<div class="container">
 			<div class="row">
@@ -37,7 +35,7 @@
 						<div class="row no-gutters">
 							<div class="col-lg-4 col-md-12 col-12">
 								<div class="feat-icon">
-									<img src="assets/img/icon/business.png" alt="">
+									<img src="{{ asset('front_assets/img/icon/business.png') }}" alt="">
 								</div>
 							</div>
 							<div class="col-lg-8 col-md-12 col-12">
@@ -54,7 +52,7 @@
 						<div class="row no-gutters">
 							<div class="col-lg-4 col-md-12 col-12">
 								<div class="feat-icon">
-									<img src="assets/img/icon/24-hours.png" alt="">
+									<img src="{{ asset('front_assets/img/icon/24-hours.png') }}" alt="">
 								</div>
 							</div>
 							<div class="col-lg-8 col-md-12 col-12">
@@ -71,7 +69,7 @@
 						<div class="row no-gutters">
 							<div class="col-lg-4 col-md-12 col-12">
 								<div class="feat-icon">
-									<img src="assets/img/icon/bounce-rate.png" alt="">
+									<img src="{{ asset('front_assets/img/icon/bounce-rate.png') }}" alt="">
 								</div>
 							</div>
 							<div class="col-lg-8 col-md-12 col-12">
@@ -88,7 +86,6 @@
 	</div>
 
 	<!-- About Section-->
-
 	<div class="about-area section-padding pb-0">
 		<div class="container">
 			<div class="row">
@@ -115,8 +112,8 @@
 				</div>
 
 				<div class="col-lg-6 col-md-12 col-sm-12 wow fadeInUp" data-wow-delay=".4s">
-					<div class="info-img">
-						<img src="assets/img/about/about-men.png" alt="">
+					<div class="">
+						<img src="{{ asset('front_assets/img/about.svg') }}" alt="">
 					</div>
 				</div>
 
@@ -125,8 +122,7 @@
 	</div>
 
 	<!-- Services Area -->
-
-	<div id="service-1" class="services-area bg-cover section-padding">
+	<div id="service-1" class="services-area bg-cover section-padding" style="background-image: url({{ asset('front_assets/img/features.jpg') }})">
 		<div class="overlay-2"></div>
 		<div class="container">
 			<div class="row">
@@ -204,105 +200,84 @@
 		</div>
 	</div>
 
-
-	<!-- Process Area -->
-
-	<div class="process-area section-padding">
+	<!-- Product Area -->
+	<div class="blog-area gray-bg section-padding">
 		<div class="container">
 			<div class="row">
 				<div class="offset-lg-2 col-lg-8 text-center">
 					<div class="section-title">
-						<h6>Our Process</h6>
-						<h2>How We <b>Work</b> for <b>Customers</b></h2>
+						<h6>Our Products</h6>
+						<h2>We provide  
+							<b> the best services</b> 
+							and installation  
+							<b>within 24 hours </b>
+						</h2>
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-lg-3 col-md-6 col-sm-12">
-					<div class="single-process-area wow fadeInLeft" data-wow-delay=".2s">
-						<div class="process-icon">
-							<img src="assets/img/icon/web.png" alt="">
+
+			<div class="row justify-content-center">
+
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="single-blog-item wow fadeInLeft" data-wow-delay=".4s">
+						<div class="blog-bg">
+							<img src="{{ asset('front_assets/img/gt06n.png') }}" alt="">
 						</div>
-						<h4>Contact Us</h4>
-						<p>Reach Us To Know More About Our Devices and Prices.</p>
+						<div class="blog-content">
+							<h5><a href="#">GT06N </a>
+							</h5>
+							<p>There are some reason Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, facilis perferendis ipsam.</p>
+							<a href="#" class="read-more">Read More</a>
+						</div>
+
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-6 col-sm-12">
-					<div class="single-process-area wow fadeInLeft" data-wow-delay=".4s">
-						<div class="process-icon">
-							<img src="assets/img/icon/document.png" alt="">
+
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="single-blog-item wow fadeInLeft" data-wow-delay=".6s">
+						<div class="blog-bg">
+							<img src="{{ asset('front_assets/img/tk303.png') }}" alt="">
 						</div>
-						<h4>Documentation</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay=".6s">
-					<div class="single-process-area">
-						<div class="process-icon">
-							<img src="assets/img/icon/call-center.png" alt="">
+						<div class="blog-content">
+							<h5><a href="#">TK303</a></h5>
+							<p>There are some reason Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, facilis perferendis ipsam.</p>
+							<a href="#" class="read-more">Read More</a>
 						</div>
-						<h4>Installment</h4>
-						<p>Get your Devices Installed Quickly in Your Cars.</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-12">
-					<div class="single-process-area wow fadeInLeft" data-wow-delay=".8s">
-						<div class="process-icon">
-							<img src="assets/img/icon/package.png" alt="">
-						</div>
-						<h4>Stay Secured</h4>
-						<p>Enjoy Our Great Service And Your Vehicle Safety.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<!--Achievement Section-->
-
-	<div class="achievement-area">
-		<div class="overlay-2"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3 col-md-6 col-sm-6">
-					<div class="single-counter-box wow fadeInLeft" data-wow-delay=".2s">
-						<p class="counter-number"><span>2150</span>+</p>
-						<h6>Satisfied Client</h6>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6">
-					<div class="single-counter-box wow fadeInLeft" data-wow-delay=".4s">
-						<p class="counter-number"><span>132</span></p>
-						<h6>Worldwide Branches</h6>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6">
-					<div class="single-counter-box wow fadeInLeft" data-wow-delay=".6s ">
-						<p class="counter-number"><span>55</span></p>
-						<h6>Countries Covered</h6>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6">
-					<div class="single-counter-box wow fadeInLeft" data-wow-delay=".8s">
-						<p class="counter-number"><span>4.8</span></p>
-						<h6>Review</h6>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	<!--Apps Section-->
+	<section class="parallex our-app section-padding-100" style="background-image: url({{ asset('front_assets/img/app-bg.png') }})">
+        <div class="container">
+          <div class="row"> 
+            <!-- Section Content -->
+            <div class="section-content">
+              <div class="col-md-5 col-sm-4">
+                  <img alt="" class="img-absolute" src="{{ asset('front_assets/img/phone.png') }}">
+              </div>
+              <div class="col-md-7 col-sm-8 ml-auto">
+                <h3>Download Our Tracking App</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua. Lorem ipsum dolor sit amet, eiusmod tempor dolore aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                <ul class="list-inline">
+                  <li><a href="#" class="btn btn-bordered"><i class="fa fa-apple"></i>iPhone</a></li>
+                  <li><a href="#" class="btn btn-bordered"><i class="fa fa-android"></i>Android</a></li>
+                  <li><a href="#" class="btn btn-bordered"><i class="fa fa-windows"></i>Windows</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+</section>
 
 	<!-- FAQ Section  -->
-
 	<div class="faq-area section-padding">
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 wow fadeInLeft" data-wow-delay=".3s">
-					<div class="faq-bg bg-cover">
-					</div>
-				</div>
-				<div class="col-lg-5 mt-40 wow fadeInRight" data-wow-delay=".4s">
-					<div class="section-title">
+			<div class="row justify-content-center">
+				<div class="col-lg-10 mt-40 wow fadeInRight" data-wow-delay=".4s">
+					<div class="section-title text-center">
 						<h6>Helpful FAQ's</h6>
 						<h2>Frequently Asked <b>Questions</b></h2>
 					</div>
@@ -390,54 +365,6 @@
 		</div>
 	</div>
 
-
-	<!-- Client Area -->
-
-	<div class="client-area pt-50 pb-40">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="client-carousel owl-carousel">
-						<div class="single-logo-wrapper">
-							<div class="logo-inner-item">
-								<img src="assets/img/client/1.png" alt="">
-							</div>
-						</div>
-						<div class="single-logo-wrapper">
-							<div class="logo-inner-item">
-								<img src="assets/img/client/2.png" alt="">
-							</div>
-						</div>
-						<div class="single-logo-wrapper">
-							<div class="logo-inner-item">
-								<img src="assets/img/client/3.png" alt="">
-							</div>
-						</div>
-						<div class="single-logo-wrapper">
-							<div class="logo-inner-item">
-								<img src="assets/img/client/4.png" alt="">
-							</div>
-						</div>
-						<div class="single-logo-wrapper">
-							<div class="logo-inner-item">
-								<img src="assets/img/client/5.png" alt="">
-							</div>
-						</div>
-						<div class="single-logo-wrapper">
-							<div class="logo-inner-item">
-								<img src="assets/img/client/6.png" alt="">
-							</div>
-						</div>
-						<div class="single-logo-wrapper">
-							<div class="logo-inner-item">
-								<img src="assets/img/client/7.png" alt="">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 
 @endsection
 

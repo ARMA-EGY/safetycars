@@ -1,3 +1,20 @@
+@if (LaravelLocalization::getCurrentLocale() == 'ar')
+    @php
+    $dir   = 'rtl';
+    $text  = 'text-right';
+    $inverse_text  = 'text-left';
+    $lang  = 'ar';
+    @endphp
+@elseif (LaravelLocalization::getCurrentLocale() == 'en')  
+    @php
+    $dir    = 'ltr';
+    $text   = '';
+    $inverse_text  = 'text-right';
+    $lang   = 'en';
+    @endphp
+@endif
+
+
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -41,6 +58,13 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 
+    @if (LaravelLocalization::getCurrentLocale() == 'ar')
+        <link rel="stylesheet" href="{{ asset('front_assets/css/style-ar.css')}}" type="text/css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@900&display=swap" rel="stylesheet">
+    @endif
+
+
  	<!-- jquery -->
  	<script src="{{ asset('front_assets/js/jquery-1.12.4.min.js') }}"></script>
 
@@ -77,20 +101,24 @@
 <form class="visits_form">
     @csrf
     <input type="hidden" name="ip" value="{{Request::ip()}}">
-    <input type="hidden" name="page_token" value="">
+    <input type="hidden" name="page_token" value="{{$page_token}}">
 </form>
 
             <!-- Header -->
-            <header class="header-area">
+            <header class="header-area" dir="{{$dir}}">
                 <div class="sticky-area">
                     <div class="navigation">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-2">
                                     <div class="logo">
-                                        <a class="navbar-brand" href="index.html">
+                                        <a class="navbar-brand" href="{{route('welcome')}}">
                                             <img src="{{ asset('front_assets/img/logo.png') }}" alt="">
-                                            <span class="text-dark" style="font-family: 'Audiowide', cursive;font-weight: 600;">SAFETY CARS</span>
+                                            @if (LaravelLocalization::getCurrentLocale() == 'ar')
+                                                <span class="text-dark" style="font-family: 'Kufam', cursive;">سيفتي كار</span>
+                                            @elseif (LaravelLocalization::getCurrentLocale() == 'en')  
+                                                <span class="text-dark" style="font-family: 'Audiowide', cursive;font-weight: 600;">SAFETY CARS</span>
+                                            @endif
                                         </a>
                                     </div>
                                 </div>
@@ -112,36 +140,51 @@
                                                 <ul class="navbar-nav ml-auto">
         
                                                     <li class="nav-item">
-                                                        <a class="nav-link active" href="#">Home</a>
+                                                        <a class="nav-link {{request()->routeIs('welcome') ? 'active' : '' }}" href="{{route('welcome')}}">{{__('core.HOME')}}</a>
                                                     </li>
         
                                                     <li class="nav-item">
-                                                        <a class="nav-link" href="#">Products</a>
+                                                        <a class="nav-link {{request()->routeIs('products') ? 'active' : '' }}" href="{{route('products')}}">{{__('core.PRODUCTS')}}</a>
                                                     </li>
         
                                                     <li class="nav-item">
-                                                        <a class="nav-link" href="#">FAQ</a>
+                                                        <a class="nav-link" href="#">{{__('core.FAQ')}}</a>
                                                     </li>
         
                                                     <li class="nav-item">
-                                                        <a class="nav-link" href="#">Enterprise</a>
+                                                        <a class="nav-link {{request()->routeIs('enterprise') ? 'active' : '' }}" href="{{route('enterprise')}}">{{__('core.ENTERPRISE')}}</a>
                                                     </li>
         
                                                     <li class="nav-item">
-                                                        <a class="nav-link" href="contact.html">Contact</a>
+                                                        <a class="nav-link {{request()->routeIs('contact') ? 'active' : '' }}" href="{{route('contact')}}">{{__('core.CONTACT-US')}}</a>
                                                     </li>
         
-                                                    <li class="nav-item">
-                                                        <a class="nav-link active" href="#">
-                                                            <img src="{{ asset('front_assets/img/flags/en.png') }}" style="width: 15px;padding-bottom: 3px;">
-                                                        EN
-                                                            <span class="sub-nav-toggler">
-                                                            </span>
-                                                        </a>
-                                                        <ul class="sub-menu">
-                                                            <li><a href="#"><img src="{{ asset('front_assets/img/flags/en.png') }}" style="width: 15px;padding-bottom: 3px;"> English</a></li>
-                                                            <li><a href="#"><img src="{{ asset('front_assets/img/flags/ar.png') }}" style="width: 15px;padding-bottom: 3px;"> Arabic</a></li>
-                                                        </ul>
+                                                    <li class="nav-item" dir="ltr">
+
+                                                        @if (LaravelLocalization::getCurrentLocale() == 'ar')
+                                                            <a class="nav-link" href="#">
+                                                                <img src="{{ asset('front_assets/img/flags/ar.png') }}" style="width: 15px;padding-bottom: 3px;">
+                                                            AR
+                                                                <span class="sub-nav-toggler">
+                                                                </span>
+                                                            </a>
+                                                            <ul class="sub-menu">
+                                                                <li><a href="{{ LaravelLocalization::getLocalizedURL('en', null, [], true) }}"><img src="{{ asset('front_assets/img/flags/en.png') }}" style="width: 15px;padding-bottom: 3px;"> English</a></li>
+                                                                <li><a href="#"><img src="{{ asset('front_assets/img/flags/ar.png') }}" style="width: 15px;padding-bottom: 3px;"> Arabic</a></li>
+                                                            </ul>
+                                                        @elseif (LaravelLocalization::getCurrentLocale() == 'en')  
+                                                            <a class="nav-link" href="#">
+                                                                <img src="{{ asset('front_assets/img/flags/en.png') }}" style="width: 15px;padding-bottom: 3px;">
+                                                            EN
+                                                                <span class="sub-nav-toggler">
+                                                                </span>
+                                                            </a>
+                                                            <ul class="sub-menu">
+                                                                <li><a href="#"><img src="{{ asset('front_assets/img/flags/en.png') }}" style="width: 15px;padding-bottom: 3px;"> English</a></li>
+                                                                <li><a href="{{ LaravelLocalization::getLocalizedURL('ar', null, [], true) }}"><img src="{{ asset('front_assets/img/flags/ar.png') }}" style="width: 15px;padding-bottom: 3px;"> Arabic</a></li>
+                                                            </ul>
+                                                        @endif
+                                                        
                                                     </li>
         
                                                 </ul>

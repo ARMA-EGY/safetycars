@@ -23,8 +23,10 @@ use Illuminate\Support\Facades\Route;
 Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]], function()
 {
     Route::get('/', 'CoreController@index')->name('welcome');
-    Route::get('/contactus', 'CoreController@contactus')->name('contactus');
+    Route::get('/about', 'CoreController@about')->name('about');
+    Route::get('/products', 'CoreController@products')->name('products');
     Route::get('/enterprise', 'CoreController@enterprise')->name('enterprise');
+    Route::get('/contact', 'CoreController@contact')->name('contact');
 });
 
 Route::get('/admin', function () {return redirect('/login');});
