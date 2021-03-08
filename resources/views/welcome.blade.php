@@ -14,10 +14,10 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-12 wow fadeInUp animated" data-wow-delay=".3s">
                             <div class="section-title">
-                               <h1>Best Solutions for<br> <b>Car Security</b> Services</h1>
-                               <p> Our Devices provide a full solution to keep your vehicle safe all the time.<br>By Protecting you and all types of vehicles from theft.</p>
+                               <h1>{{__('core.H-sld-t1')}}<br> <b>{{__('core.H-sld-t2')}}</b>{{__('core.H-sld-t3')}}</h1>
+                               <p>{{__('core.H-sld-d1')}}<br>{{__('core.H-sld-d2')}}</p>
                             </div>
-                            <a href="#" class="main-btn">Buy Now</a>
+                            <a href="#" class="main-btn">{{__('core.H-sld-b')}}</a>
                         </div>
                     </div>
                 </div>
@@ -92,20 +92,20 @@
 				<div class="col-lg-6 col-md-12 col-sm-12 wow fadeInLeft" data-wow-delay=".3s">
 					<div class="info-content-area">
 						<div class="section-title">
-							<h6>About Us</h6>
-							<h2>We're leading <b>Vehicle <br>Tracking Service</b> in Egypt</h2>
+							<h6>{{__('core.H-abt-t')}}</h6>
+							<h2>{{__('core.H-abt-d1')}}<b>{{__('core.H-abt-d2')}}<br>{{__('core.H-abt-d3')}}</b>{{__('core.H-abt-d4')}}</h2>
 						</div>
-						<p>We successively delivered high quality vehicle tracking devices working in Egypt.</p>
-						<p class="highlight">More than 10 years of experience in vehicle security devices.</p>
-						<p class="highlight">We always provide flexible & smart solutions. </p>
-						<p class="highlight">Unique latest machinary used the Logistics project.</p>
+						<p>{{__('core.H-abt-d5')}}</p>
+						<p class="highlight">{{__('core.H-abt-p1')}}</p>
+						<p class="highlight">{{__('core.H-abt-p2')}}</p>
+						<p class="highlight">{{__('core.H-abt-p3')}}</p>
 
 						<div class="row founded">
 							<div class="col-lg-4 col-md-6 col-12">
-								<div class="years"><span>10</span>Year of Success</div>
+								<div class="years"><span>10</span>{{__('core.H-abt-btm1')}}</div>
 							</div>
 							<div class="col-lg-8 col-md-6 col-12">
-								<div class="text">Since we established in 2010 experience &amp; still a growing protfolio day by day!</div>
+								<div class="text">{{__('core.H-abt-btm2')}}</div>
 							</div>
 						</div>
 					</div>
@@ -128,8 +128,8 @@
 			<div class="row">
 				<div class="offset-lg-2 col-lg-8 text-center">
 					<div class="section-title">
-						<h6>FEATURES</h6>
-						<h2>Our Devices Come with Various <br><b>Outstanding Features</b></h2>
+						<h6>{{__('core.H-fts-t')}}</h6>
+						<h2>{{__('core.H-fts-d1')}}<br><b>{{__('core.H-fts-d2')}}</b></h2>
 					</div>
 				</div>
 			</div>
@@ -139,9 +139,9 @@
 						<div class="service-icon">
 							<i class="flaticon-delivery-man"></i>
 						</div>
-						<h4>Determine the location of the vehicle</h4>
-						<p>This services involve transferring the parcels to the closest depot to the delivery location.</p>
-						<a href="single-service.html" class="read-more">Read More</a>
+						<h4>{{__('core.H-fts-c1-t')}}</h4>
+						<p>{{__('core.H-fts-c1-d')}}</p>
+		
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12">
@@ -149,9 +149,9 @@
 						<div class="service-icon">
 							<i class="flaticon-truck"></i>
 						</div>
-						<h4>Mic to hear what's going on in the car</h4>
-						<p>This is a service provided to those who need urgent delivery to be sent and received on the same day.</p>
-						<a href="single-service.html" class="read-more">Read More</a>
+						<h4>{{__('core.H-fts-c2-t')}}</h4>
+						<p>{{__('core.H-fts-c2-d')}}</p>
+						
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12">
@@ -159,9 +159,8 @@
 						<div class="service-icon">
 							<i class="flaticon-pallet"></i>
 						</div>
-						<h4>Stop and start the car from your mobile phone</h4>
-						<p>This is a service that safely strict delivery and promptly delivers goods on pallets.</p>
-						<a href="single-service.html" class="read-more">Read More</a>
+						<h4>{{__('core.H-fts-c3-t')}}</h4>
+						<p>{{__('core.H-fts-c3-d')}}</p>
 					</div>
 				</div>
 
@@ -170,9 +169,8 @@
 						<div class="service-icon">
 							<i class="flaticon-fast-delivery"></i>
 						</div>
-						<h4>Determine the geographical area of the vehicle</h4>
-						<p>This courier will usually transport the goods during the night or early of the morning.</p>
-						<a href="single-service.html" class="read-more">Read More</a>
+						<h4>{{__('core.H-fts-c4-t')}}</h4>
+						<p>{{__('core.H-fts-c4-d')}}</p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12">
@@ -180,9 +178,8 @@
 						<div class="service-icon">
 							<i class="flaticon-air-freight"></i>
 						</div>
-						<h4>Determine the vehicle speed</h4>
-						<p>This is a transport service of goods or documents from one country to another country.</p>
-						<a href="single-service.html" class="read-more">Read More</a>
+						<h4>{{__('core.H-fts-c5-t')}}</h4>
+						<p>{{__('core.H-fts-c5-d')}}</p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12">
@@ -190,11 +187,40 @@
 						<div class="service-icon">
 							<i class="flaticon-wholesale"></i>
 						</div>
-						<h4>Warehousing</h4>
-						<p>This type of service will involve managed storage solutions to give companies greater control.</p>
-						<a href="single-service.html" class="read-more">Read More</a>
+						<h4>{{__('core.H-fts-c6-t')}}</h4>
+						<p>{{__('core.H-fts-c6-d')}}</p>
 					</div>
 				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="single-service-area service-6 mt-30 wow fadeInLeft" data-wow-delay=".6s">
+						<div class="service-icon">
+							<i class="flaticon-wholesale"></i>
+						</div>
+						<h4>{{__('core.H-fts-c7-t')}}</h4>
+						<p>{{__('core.H-fts-c7-d')}}</p>
+					</div>
+				</div>
+
+
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="single-service-area service-6 mt-30 wow fadeInLeft" data-wow-delay=".6s">
+						<div class="service-icon">
+							<i class="flaticon-wholesale"></i>
+						</div>
+						<h4>{{__('core.H-fts-c8-t')}}</h4>
+						<p>{{__('core.H-fts-c8-d')}}</p>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="single-service-area service-6 mt-30 wow fadeInLeft" data-wow-delay=".6s">
+						<div class="service-icon">
+							<i class="flaticon-wholesale"></i>
+						</div>
+						<h4>{{__('core.H-fts-c9-t')}}</h4>
+						<p>{{__('core.H-fts-c9-d')}}</p>
+					</div>
+				</div>												
 
 			</div>
 		</div>
@@ -206,11 +232,11 @@
 			<div class="row">
 				<div class="offset-lg-2 col-lg-8 text-center">
 					<div class="section-title">
-						<h6>Our Products</h6>
-						<h2>We provide  
-							<b> the best services</b> 
-							and installation  
-							<b>within 24 hours </b>
+						<h6>{{__('core.H-prd-t')}}</h6>
+						<h2>{{__('core.H-prd-d1')}}  
+							<b>{{__('core.H-prd-d2')}}</b> 
+							{{__('core.H-prd-d3')}}  
+							<b>{{__('core.H-prd-d4')}}</b>
 						</h2>
 					</div>
 				</div>
@@ -259,8 +285,8 @@
                   <img alt="" class="img-absolute" src="{{ asset('front_assets/img/phone.png') }}">
               </div>
               <div class="col-md-7 col-sm-8 ml-auto">
-                <h3>Download Our Tracking App</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua. Lorem ipsum dolor sit amet, eiusmod tempor dolore aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                <h3>{{__('core.H-app-t')}}</h3>
+                <p>{{__('core.H-aap-d')}}</p>
                 <ul class="list-inline">
                   <li><a href="#" class="btn btn-bordered"><i class="fa fa-apple"></i>iPhone</a></li>
                   <li><a href="#" class="btn btn-bordered"><i class="fa fa-android"></i>Android</a></li>
@@ -278,8 +304,8 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-10 mt-40 wow fadeInRight" data-wow-delay=".4s">
 					<div class="section-title text-center">
-						<h6>Helpful FAQ's</h6>
-						<h2>Frequently Asked <b>Questions</b></h2>
+						<h6>{{__('core.H-faq-t')}}</h6>
+						<h2>{{__('core.H-faq-d1')}} <b>{{__('core.H-faq-d2')}}</b></h2>
 					</div>
 					<div class="styled-faq">
 						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
