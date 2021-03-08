@@ -322,7 +322,127 @@
 			});
 
         </script>
+        <script>
+            $('.contact_form').submit(function(e)
+            {
+                e.preventDefault();
+                $('.submit').prop('disabled', true);
+                $('.error').text('');
 
+                var head1   = 'Thank You';
+                var title1  = 'Your Message Has Been Sent Successfully, We will contact you ASAP. ';
+                var head2   = 'Oops...';
+                var title2  = 'Something went wrong, please try again later.';
+
+                $.ajax({
+                    url:        "{{route('message')}}",
+                    method:     'POST',
+                    dataType:   'json',
+                    data:       $(this).serialize() ,
+                    success : function(data)
+                        {
+                            $('.submit').prop('disabled', false);
+                            
+                            if (data['status'] == 'true')
+                            {
+                                Swal.fire(
+                                        head1,
+                                        title1,
+                                        'success'
+                                        )
+                                $('.field').text('');
+                                $('.field').val('');
+                            }
+                            else if (data['status'] == 'false')
+                            {
+                                Swal.fire(
+                                        head2,
+                                        title2,
+                                        'error'
+                                        )
+                            }
+                        },
+                        error : function(reject)
+                        {
+                            $('.submit').prop('disabled', false);
+
+                            var response = $.parseJSON(reject.responseText);
+                            $.each(response.errors, function(key, val)
+                            {
+                                Swal.fire(
+                                        head2,
+                                        val[0],
+                                        'error'
+                                        )
+                            });
+                        }
+                    
+                    
+                });
+
+            });
+        </script>
+
+        <script>
+            $('.enterprise_form').submit(function(e)
+            {
+                e.preventDefault();
+                $('.submit').prop('disabled', true);
+                $('.error').text('');
+
+                var head1   = 'Thank You';
+                var title1  = 'Your Request Has Been Sent Successfully, We will contact you ASAP. ';
+                var head2   = 'Oops...';
+                var title2  = 'Something went wrong, please try again later.';
+
+                $.ajax({
+                    url:        "{{route('enterprisesubmit')}}",
+                    method:     'POST',
+                    dataType:   'json',
+                    data:       $(this).serialize() ,
+                    success : function(data)
+                        {
+                            $('.submit').prop('disabled', false);
+                            
+                            if (data['status'] == 'true')
+                            {
+                                Swal.fire(
+                                        head1,
+                                        title1,
+                                        'success'
+                                        )
+                                $('.field').text('');
+                                $('.field').val('');
+                            }
+                            else if (data['status'] == 'false')
+                            {
+                                Swal.fire(
+                                        head2,
+                                        title2,
+                                        'error'
+                                        )
+                            }
+                        },
+                        error : function(reject)
+                        {
+                            $('.submit').prop('disabled', false);
+
+                            var response = $.parseJSON(reject.responseText);
+                            $.each(response.errors, function(key, val)
+                            {
+                                Swal.fire(
+                                        head2,
+                                        val[0],
+                                        'error'
+                                        )
+                            });
+                        }
+                    
+                    
+                });
+
+            });
+        </script>        
         @yield('script')
 
 </body>

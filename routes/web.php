@@ -39,6 +39,8 @@ Route::get('/admin', function () {return redirect('/login');});
 Route::post('/message', 'CoreController@message')->name('message');
 Route::post('/subscribe', 'CoreController@subscribe')->name('subscribe');
 Route::post('/visits', 'CoreController@visits')->name('visits');
+Route::post('/enterprisesubmit', 'CoreController@enterprisesubmit')->name('enterprisesubmit');
+
 
 /*
 |--------------------------------------------------------------------------

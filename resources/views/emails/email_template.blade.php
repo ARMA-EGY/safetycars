@@ -7,6 +7,8 @@ Here are the details:
 <br>
 <b>Email:</b> {{ $details['email'] }}
 <br>
+<b>Phone:</b> {{ $details['phone'] }}
+<br>
 <b>Subject:</b> {{ $details['subject'] }}
 <br>
 <b>Message:</b> {{ $details['message'] }}
