@@ -276,7 +276,7 @@
 	</div>
 
 	<!--Apps Section-->
-	<section class="parallex our-app section-padding-100" style="background-image: url({{ asset('front_assets/img/app-bg.png') }})">
+	<section class="parallex our-app section-padding-100" style="background-image: url({{ asset('front_assets/img/image-5.jpg') }})">
         <div class="container">
           <div class="row"> 
             <!-- Section Content -->

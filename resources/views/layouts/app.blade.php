@@ -113,7 +113,7 @@
                                 <div class="col-lg-2">
                                     <div class="logo">
                                         <a class="navbar-brand" href="{{route('welcome')}}">
-                                            <img src="{{ asset('front_assets/img/logo.png') }}" alt="">
+                                            <img src="{{ asset('storage/'.$logo->logo) }}" alt="">
                                             @if (LaravelLocalization::getCurrentLocale() == 'ar')
                                                 <span class="text-dark" style="font-family: 'Kufam', cursive;">سيفتي كار</span>
                                             @elseif (LaravelLocalization::getCurrentLocale() == 'en')  
@@ -214,11 +214,16 @@
                 <div class="container">
                     <div class="footer-up">
                         <div class="row">
-                            <div class="col-lg-3 col-md-6 col-sm-12">
-                                <div class="logo">
-                                    <img src="{{ asset('front_assets/img/logo-white.png') }}" alt="expoint-logo">
+                            <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+                                <div class="">
+                                    <img src="{{ asset('storage/'.$logo->logo) }}" alt="expoint-logo" style="width: 60px">
+                                    @if (LaravelLocalization::getCurrentLocale() == 'ar')
+                                        <span class="text-white" style="font-family: 'Kufam', cursive;font-size: 20px;">سيفتي كار</span>
+                                    @elseif (LaravelLocalization::getCurrentLocale() == 'en')  
+                                        <span class="text-white" style="font-family: 'Audiowide', cursive;font-weight: 600;font-size: 20px;">SAFETY CARS</span>
+                                    @endif
                                 </div>
-                                <p>We are the Top Courier Service Provider and Logistics Solutions. We’re services around over the worldwide. We never give up on the challenges.</p>
+                                <p>Best Solutions for Car Security Services, We're leading Vehicle Tracking Service in Egypt</p>
                                 <div class="social-area">
                                     <a href=""><i class="lab la-facebook-f"></i></a>
                                     <a href=""><i class="lab la-instagram"></i></a>
@@ -226,56 +231,59 @@
                                     <a href=""><i class="la la-skype"></i></a>
                                 </div>
                             </div>
-                            <div class="col-lg-2 offset-lg-1 col-md-6 com-sm-12">
-                                <h5>Explore</h5>
-                                <ul>
-                                    <li>
-                                        <a href="#">About Company</a>
-                                        <a href="#">Latest News</a>
-                                        <a href="#">Get a Quote</a>
-                                        <a href="#">Pricing Guide</a>
-                                        <a href="#">Helpful FAQ</a>
-                                        <a href="#">Sitemap</a>
-                                    </li>
-                                </ul>
+
+                            <div class="col-lg-4 offset-lg-1 col-md-6 com-sm-12">
+                                <h5 class="text-center">Main Menu</h5>
+                                <div class="row justify-content-center">
+                                    <div class="col-5 offset-lg-2">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Home</a>
+                                                <a href="#">Products</a>
+                                                <a href="#">FAQ</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-5">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Enterprise</a>
+                                                <a href="#">Contact Us</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-lg-3 col-md-6 col-sm-12">
-                                <h5>Services</h5>
-                                <ul>
-                                    <li>
-                                        <a href="#"><span>-</span> Express Courier</a>
-                                        <a href="#"><span>-</span> Pallet Courier</a>
-                                        <a href="#"><span>-</span> Air Freight</a>
-                                        <a href="#"><span>-</span> Ocean Freight</a>
-                                        <a href="#"><span>-</span> Warehousing</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
+
+                            <div class="col-lg-3 offset-lg-1 col-md-6">
                                 <div class="subscribe-form">
-                                    <h5>Newsletter</h5>
-                                    <p>Sign Up now for latest news update</p>
-                                    <form action="index.html">
-                                        <input type="email" placeholder="Your email">
-                                        <button class="main-btn">Subscribe</button>
-                                    </form>
+                                    <h5>Contact Info</h5>
+                                    <ul class="list-icon text-light">
+                                        <li class="my-2"><i class="fa fa-map-marker"></i> 12 Lotfy Hassona St., Off Tahrir Street, Dokki, Giza, Egypt <br></li>
+                                        <li class="my-2"><i class="fa fa-phone"></i> (+20) 33383949 </li>
+                                        <li class="my-2"><i class="fa fa-envelope"></i> <span>info@safetycars.net</span> </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </footer>
-
-            <div class="footer-bottom">
+            
+            <div class="footer-bottom py-2">
                 <div class="container">
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-lg-6 col-md-6 col-sm-12">
-                            <p class="copyright-line">© 2021 Expoint. All rights reserved.</p>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12">
-                            <p class="privacy">Privacy Policy | Terms &amp; Conditions</p>
-                        </div>
+                <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="text-center">
+                        <p class="text-center mb-0 pb-0" style="font-weight: bold;font-size: 12pt;color: #fff;font-family: Raleway, sans-serif;padding: 10px 0;">Powered By 
+                            <a href="https://armasoftware.com/">
+                                <img width="70" class="lazy img-loaded" src="https://armasoftware.com/arma_logo.png" data-src="https://armasoftware.com/arma_logo.png"> 
+                            </a>
+                        </p>
                     </div>
+                </div>
+                </div>
                 </div>
             </div>
 

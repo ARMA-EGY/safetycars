@@ -50,7 +50,6 @@ class CoreController extends Controller
         return view('welcome')->with($data);     
     }
 
-
     //======== About Page ======== 
     public function about()
     {
@@ -115,7 +114,7 @@ class CoreController extends Controller
         return view('contactus')->with($data);     
     }
 
-    
+
     public function enterprisesubmit(EnterpriseRequest $request)
     {
         $enterprise =  enterprise::create([
@@ -143,6 +142,7 @@ class CoreController extends Controller
             ]) ;
         }
     }
+
 
     //======== Single Blog Page ======== 
     public function singleblog($url)

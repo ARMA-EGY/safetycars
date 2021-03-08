@@ -36,7 +36,7 @@
         <div class="sidenav-header  align-items-center">
             <a class="navbar-brand" href="javascript:void(0)">
                 @isset($logo)
-                 <img src="{{ asset('storage/'.$logo->logo) }}" class="navbar-brand-img" alt="Logo" style="width: 130px;">
+                 <img src="{{ asset('storage/'.$logo->logo) }}" class="navbar-brand-img" alt="Logo" style="width: 60px;">
                  @else
                     <h3 class="text-white">Admin Panel</h3>
                  @endisset
