@@ -62,16 +62,16 @@ return [
     "H-fts-c2-t" => "MIC",
     "H-fts-c2-d" => "Our devices come with a Mic to hear all what's going on in the car",
 
-    "H-fts-c3-t" => "START & STOP",
+    "H-fts-c3-t" => "START & STOP ENGINE",
     "H-fts-c3-d" => "This is a service that give you the capability to Stop and start the car from your mobile phone.",
 
     "H-fts-c4-t" => "GEOGRAPHICAL",
     "H-fts-c4-d" => "This feature let's you determine the geographical area of the vehicle",
 
-    "H-fts-c5-t" => "SPEED",
+    "H-fts-c5-t" => "SPEED LIMITATION",
     "H-fts-c5-d" => "This is a service that let's you determine the vehicle speed",
 
-    "H-fts-c6-t" => "BATTERY",
+    "H-fts-c6-t" => "BATTERY ALERT",
     "H-fts-c6-d" => "Give an alert on your phone if the car battery is stolen",
 
     "H-fts-c7-t" => "INTERNAL BATTERY",
