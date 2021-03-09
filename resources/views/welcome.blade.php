@@ -191,7 +191,7 @@
 							<img src="{{ asset('front_assets/img/speed.svg') }}" alt="" class="h-40">
 						</div>
 						<h4>{{__('core.H-fts-c5-t')}}</h4>
-						<p class="{{$text}}" dir="{{$dir}}" lang="{{$lang}}">{{__('core.H-fts-c5-d')}}</p>
+						<p  dir="{{$dir}}" lang="{{$lang}}">{{__('core.H-fts-c5-d')}}</p>
 					</div>
 				</div>
 
@@ -294,7 +294,7 @@
 	</div>
 
 	<!--Apps Section-->
-	<section  class="parallex our-app section-padding-100 {{$text}}" dir="{{$dir}}" lang="{{$lang}}" style="background-image: url({{ asset('front_assets/img/image-5.jpg') }})">
+	<section  class="parallex our-app section-padding-100 {{$text}}" lang="{{$lang}}" style="background-image: url({{ asset('front_assets/img/image-5.jpg') }})">
         <div class="container">
           <div class="row"> 
             <!-- Section Content -->
@@ -302,9 +302,9 @@
               <div class="col-md-5 col-sm-4">
                   <img alt="" class="img-absolute" src="{{ asset('front_assets/img/phone.png') }}">
               </div>
-              <div class="col-md-7 col-sm-8 ml-auto ml-auto-ar">
+              <div class="col-md-7 col-sm-8 ml-auto">
                 <h3>{{__('core.H-app-t')}}</h3>
-                <p>{{__('core.H-aap-d')}}</p>
+                <p dir="{{$dir}}">{{__('core.H-aap-d')}}</p>
                 <ul class="list-inline">
                   <li><a href="#" class="btn btn-bordered"><i class="fa fa-apple"></i>iPhone</a></li>
                   <li><a href="#" class="btn btn-bordered"><i class="fa fa-android"></i>Android</a></li>
