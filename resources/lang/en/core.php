@@ -50,7 +50,7 @@ return [
     "H-abt-p2" => "We always provide flexible & smart solutions. ",
     "H-abt-p3" => "Unique latest machinary used the Logistics project.",
     "H-abt-btm1" => "Year of Success",
-    "H-abt-btm2" => "Since we established in 2010 experience &amp; still a growing protfolio day by day!",
+    "H-abt-btm2" => "Since we established in 2010 we are gaining experience & still a growing protfolio day by day!",
     "H-fts-t" => "FEATURES",
     "H-fts-d1" => "Our Devices Come with Various ",
     "H-fts-d2" => "Outstanding Features",
@@ -81,7 +81,7 @@ return [
     "H-fts-c8-d" => "Reduce fuel and consumption by monitoring the route",
 
     "H-fts-c9-t" => "SAFETY",
-    "H-fts-c9-d" => "The system works on the user name and password system",
+    "H-fts-c9-d" => "The system works with user name and password",
 
     "H-prd-t" => "Our Products",
     "H-prd-d1" => "We provide",
@@ -90,11 +90,45 @@ return [
     "H-prd-d4" => "within 24 hours ",
 
     "H-app-t" => "Download Our Tracking App",
-    "H-aap-d" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua. Lorem ipsum dolor sit amet, eiusmod tempor dolore aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.",
+    "H-aap-d" => "Our apps is a professional GPS vehicle monitoring and fleet management platform, to improve user experience, Were you can manage any type of fleet and save your time and money. You will always know what is happening with your fleet and what could be improved.",
 
     "H-faq-t" => "Helpful FAQ's",
     "H-faq-d1" => "Frequently Asked ",
     "H-faq-d2" => "Questions",
 
+
+
+    "ABT-t1" => "Contact Us",
+    "ABT-d1" => "Don't hesitate to contact
+    to get Information",
+
+    "ABT-c1-t" => "Location",
+    "ABT-c1-d1" => "66 Broklyn Streat ",
+    "ABT-c1-d2" => "New York, USA",
+
+    "ABT-c2-t" => "Working Hours",
+    "ABT-c2-d1" => "Monday-Friday",
+    "ABT-c2-d2" => "08.00-20.00",    
+    
+
+    "ABT-c3-t" => "Phone Number",
+    "ABT-c3-d1" => "(+1)212-946-2064 ",
+    "ABT-c3-d2" => "(+3)112-976-2067",
+
+    "ABT-c4-t" => "E-mail Address",
+    "ABT-c4-d1" => "support@safetycars.net",
+    
+    
+    
+    
+
+    "ABT-t2" => "STAY WITH US",
+    "ABT-d2" => "Get in Touch",
+    "ABT-frm-f1" => "Your Name",
+    "ABT-frm-f2" => "E-mail",
+    "ABT-frm-f3" => "Phone Number",
+    "ABT-frm-f4" => "Subject",
+    "ABT-frm-f5" => "Write Message",
+    "ABT-frm-btn" => "Get A Quote",
 
 ];

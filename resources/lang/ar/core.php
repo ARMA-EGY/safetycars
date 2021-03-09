@@ -24,72 +24,112 @@ return [
     "ARABIC" => "ARABIC",
     "ENGLISH" => "ENGLISH",
     
-    "H-sld-t1" => "Best Solutions for",
-    "H-sld-t2" => "Car Security",
-    "H-sld-t3" => " Services",
-    "H-sld-d1" => " Our Devices provide a full solution to keep your vehicle safe all the time.",
-    "H-sld-d2" => "By Protecting you and all types of vehicles from theft.",
-    "H-sld-b" => "Buy Now",
+    "H-sld-t1" => "أفضل الحلول",
+    "H-sld-t2" => "لخدمات أمن",
+    "H-sld-t3" => " السيارات",
+    "H-sld-d1" => "توفر أجهزتنا حلاً كاملاً للحفاظ على سيارتك آمنة طوال الوقت.",
+    "H-sld-d2" => "من خلال حمايتك وحماية جميع أنواع المركبات من السرقة.",
+    "H-sld-b" => "اشتري الآن",
+
+
     "H-sld-c1-t" => "Flat Rate Fees",
     "H-sld-c1-d" => "It is a long established fact that and reader will by the readable based.",
-    "H-sld-c2-t" => "24/7 Tracking",
-    "H-sld-c2-d" => "Stay secured around the clock by tracking your vehicle anytime.",
-    "H-sld-c3-t" => "Easy Tools",
-    "H-sld-c3-d" => "Track your car using our easy to use apps.",
-    "H-abt-t" => "About Us",
-    "H-abt-d1" => "We're leading ",
-    "H-abt-d2" => "Vehicle ",
-    "H-abt-d3" => "Tracking Service",
-    "H-abt-d4" => " in Egypt",
-    "H-abt-d5" => "We successively delivered high quality vehicle tracking devices working in Egypt.",
-    "H-abt-p1" => "More than 10 years of experience in vehicle security devices.",
-    "H-abt-p2" => "We always provide flexible & smart solutions. ",
+    "H-sld-c2-t" => "24/7 تتبع",
+    "H-sld-c2-d" => "حافظ على أمانك على مدار الساعة من خلال تتبع سيارتك في أي وقت.",
+    "H-sld-c3-t" => "أدوات سهلة",
+    "H-sld-c3-d" => "تتبع سيارتك باستخدام تطبيقاتنا سهلة الاستخدام.",
+
+
+    "H-abt-t" => "معلومات عنا",
+    "H-abt-d1" => "نحن نقود",
+    "H-abt-d2" => "خدمة تتبع ",
+    "H-abt-d3" => "المركبات",
+    "H-abt-d4" => " في مصر",
+    "H-abt-d5" => "نجحنا في تقديم أجهزة عالية الجودة لتتبع المركبات تعمل في مصر.",
+    "H-abt-p1" => "أكثر من 10 سنوات من الخبرة في مجال الأجهزة الأمنية للمركبات.",
+    "H-abt-p2" => "نحن نقدم دائمًا حلولاً مرنة وذكية.",
     "H-abt-p3" => "Unique latest machinary used the Logistics project.",
-    "H-abt-btm1" => "Year of Success",
-    "H-abt-btm2" => "ince we established in 2010 experience &amp; still a growing protfolio day by day!",
-    "H-fts-t" => "FEATURES",
-    "H-fts-d1" => "Our Devices Come with Various ",
-    "H-fts-d2" => "Outstanding Features",
+    "H-abt-btm1" => "عام من النجاح",
+    "H-abt-btm2" => "منذ تأسيسنا في عام 2010 ،وما زلنا  نكتسب الخبرة يومًا بعد يوم!",
+    "H-fts-t" => "الخواص",
+    "H-fts-d1" => "تأتي أجهزتنا مع العديد من",
+    "H-fts-d2" => "الميزات الرائعة",
 
-    "H-fts-c1-t" => "FEATURES",
-    "H-fts-c1-d" => "Our Devices Come with VariousOutstanding Features.",
 
-    "H-fts-c2-t" => "Location",
-    "H-fts-c2-d" => "This feature helps you to determine the location of your vehicle.",
+    "H-fts-c1-t" => "الموقع",
+    "H-fts-c1-d" => "تساعدك هذه الميزة على تحديد موقع سيارتك.",
 
-    "H-fts-c3-t" => "MIC",
-    "H-fts-c3-d" => "Our devices come with a Mic to hear all what's going on in the car",
+    "H-fts-c2-t" => "ميكروفون",
+    "H-fts-c2-d" => "تأتي أجهزتنا مزودة بميكروفون لسماع كل ما يحدث في السيارة",
 
-    "H-fts-c4-t" => "START & STOP",
-    "H-fts-c4-d" => "This is a service that give you the capability to Stop and start the car from your mobile phone.",
+    "H-fts-c3-t" => "بدء و توقف",
+    "H-fts-c3-d" => "هذه خدمة تمنحك القدرة على إيقاف السيارة وتشغيلها من هاتفك المحمول.",
 
-    "H-fts-c5-t" => "GEOGRAPHICAL",
-    "H-fts-c5-d" => "This feature let's you determine the geographical area of the vehicle",
+    "H-fts-c4-t" => "جغرافيا",
+    "H-fts-c4-d" => "تتيح لك هذه الميزة تحديد المنطقة الجغرافية للسيارةe",
 
-    "H-fts-c6-t" => "SPEED",
-    "H-fts-c6-d" => "This is a service that let's you determine the vehicle speed",
+    "H-fts-c5-t" => "السرعة",
+    "H-fts-c5-d" => "هذه خدمة تتيح لك تحديد سرعة السيارة",
 
-    "H-fts-c7-t" => "BATTERY",
-    "H-fts-c7-d" => "Give an alert on your phone if the car battery is stolen",
+    "H-fts-c6-t" => "البطارية",
+    "H-fts-c6-d" => "قم بإصدار تنبيه على هاتفك في حالة سرقة بطارية السيارة",
 
-    "H-fts-c8-t" => "FUEL CONSUMPTION",
-    "H-fts-c8-d" => "Reduce fuel and consumption by monitoring the route",
+    "H-fts-c7-t" => "البطارية الداخلية",
+    "H-fts-c7-d" => "الجهاز مزود ببطارية داخلية تعمل في حالة فصل بطارية السيارة",
 
-    "H-fts-c9-t" => "SAFETY",
-    "H-fts-c9-d" => "The system works on the user name and password system",
+    "H-fts-c8-t" => "استهلاك الوقود",
+    "H-fts-c8-d" => "تقليل الوقود والاستهلاك من خلال مراقبة الطريق",
 
-    "H-prd-t" => "Our Products",
-    "H-prd-d1" => "We provide",
-    "H-prd-d2" => " the best services",
-    "H-prd-d3" => "and installation",
-    "H-prd-d4" => "within 24 hours ",
+    "H-fts-c9-t" => "السلامة",
+    "H-fts-c9-d" => "يعمل النظام على نظام اسم المستخدم وكلمة المرور",
 
-    "H-app-r" => "Download Our Tracking App",
-    "H-aap-d" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua. Lorem ipsum dolor sit amet, eiusmod tempor dolore aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.",
+    "H-prd-t" => "منتجاتنا",
+    "H-prd-d1" => "نحن نقدم",
+    "H-prd-d2" => " فضل الخدمات",
+    "H-prd-d3" => "والتركيب",
+    "H-prd-d4" => "خلال 24 ساعة",
 
-    "H-faq-t" => "Helpful FAQ's",
-    "H-faq-d1" => "Frequently Asked ",
-    "H-faq-d2" => "Questions",
+    "H-app-t" => "قم بتنزيل تطبيق التتبع الخاص بنا",
+    "H-aap-d" => "تطبيقاتنا عبارة عن منصة احترافية لمراقبة المركبات وإدارة الأسطول عبر نظام تحديد المواقع العالمي (GPS) ، لتحسين تجربة المستخدم ، حيث يمكنك إدارة أي نوع من الأسطول وتوفير وقتك وأموالك. ستعرف دائمًا ما يحدث لأسطولك وما يمكن تحسينه.",
+
+    "H-faq-t" => "أسئلة وأجوبة مفيدة",
+    "H-faq-d1" => "أسئلة",
+    "H-faq-d2" => "متكررة",
+
+
+
+
+
+    "ABT-t1" => "تواصل معنا",
+    "ABT-d1" => "لا تتردد في الاتصال للحصول على المعلومات",
+
+    "ABT-c1-t" => "الموقع",
+    "ABT-c1-d1" => "66 Broklyn Streat ",
+    "ABT-c1-d2" => "New York, USA",
+
+    "ABT-c2-t" => "ساعات العمل",
+    "ABT-c2-d1" => "Monday-Friday",
+    "ABT-c2-d2" => "08.00-20.00",    
+    
+
+    "ABT-c3-t" => "رقم التليفون",
+    "ABT-c3-d1" => "(+1)212-946-2064 ",
+    "ABT-c3-d2" => "(+3)112-976-2067",
+
+    "ABT-c4-t" => "البريد الكتروني",
+    "ABT-c4-d1" => "support@safetycars.net",
+
+
+    
+
+    "ABT-t2" => "ابقى معنا",
+    "ABT-d2" => "ابقى على تواصل",
+    "ABT-frm-f1" => "الاسم",
+    "ABT-frm-f2" => "البريد الالكتروني",
+    "ABT-frm-f3" => "رقم التليفون",
+    "ABT-frm-f4" => "الموضوع",
+    "ABT-frm-f5" => "اكتب رسالة",
+    "ABT-frm-btn" => "ارسال",
 
 
 

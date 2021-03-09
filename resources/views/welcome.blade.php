@@ -1,3 +1,18 @@
+@if (LaravelLocalization::getCurrentLocale() == 'ar')
+    @php
+    $dir   = 'rtl';
+    $text  = 'text-right';
+    $inverse_text  = 'text-left';
+    $lang  = 'ar';
+    @endphp
+@elseif (LaravelLocalization::getCurrentLocale() == 'en')  
+    @php
+    $dir    = 'ltr';
+    $text   = '';
+    $inverse_text  = 'text-right';
+    $lang   = 'en';
+    @endphp
+@endif
 
 @extends('layouts.app')
 
@@ -12,9 +27,9 @@
             <div class="hero-area-content">
                 <div class="container">
                     <div class="row justify-content-center">
-                        <div class="col-lg-12 wow fadeInUp animated" data-wow-delay=".3s">
-                            <div class="section-title">
-                               <h1>{{__('core.H-sld-t1')}}<br> <b>{{__('core.H-sld-t2')}}</b>{{__('core.H-sld-t3')}}</h1>
+                        <div class="col-lg-12 wow fadeInUp animated  {{$text}}" dir="{{$dir}}" lang="{{$lang}}" data-wow-delay=".3s">
+                            <div class="section-title" >
+                               <h1 dir="rtl" lang="ar">{{__('core.H-sld-t1')}}<br> <b>{{__('core.H-sld-t2')}}</b>{{__('core.H-sld-t3')}}</h1>
                                <p>{{__('core.H-sld-d1')}}<br>{{__('core.H-sld-d2')}}</p>
                             </div>
                             <a href="#" class="main-btn">{{__('core.H-sld-b')}}</a>
@@ -40,8 +55,10 @@
 							</div>
 							<div class="col-lg-8 col-md-12 col-12">
 								<div class="feat-content">
+
 									<h5>Car</h5>
 									<p>Track your car using our easy to use apps.</p>
+
 								</div>
 							</div>
 						</div>
@@ -57,8 +74,10 @@
 							</div>
 							<div class="col-lg-8 col-md-12 col-12">
 								<div class="feat-content">
+
 									<h5>Motorcycle</h5>
 									<p>Track your car using our easy to use apps.</p>
+
 								</div>
 							</div>
 						</div>
@@ -74,8 +93,10 @@
 							</div>
 							<div class="col-lg-8 col-md-12 col-12">
 								<div class="feat-content">
+
 									<h5>Truck</h5>
 									<p>Track your car using our easy to use apps.</p>
+
 								</div>
 							</div>
 						</div>
@@ -88,17 +109,17 @@
 	<!-- About Section-->
 	<div class="about-area section-padding pb-0">
 		<div class="container">
-			<div class="row">
+			<div class="row {{$text}}" dir="{{$dir}}" lang="{{$lang}}">
 				<div class="col-lg-6 col-md-12 col-sm-12 wow fadeInLeft" data-wow-delay=".3s">
 					<div class="info-content-area">
 						<div class="section-title">
 							<h6>{{__('core.H-abt-t')}}</h6>
 							<h2>{{__('core.H-abt-d1')}}<b>{{__('core.H-abt-d2')}}<br>{{__('core.H-abt-d3')}}</b>{{__('core.H-abt-d4')}}</h2>
 						</div>
-						<p>{{__('core.H-abt-d5')}}</p>
-						<p class="highlight">{{__('core.H-abt-p1')}}</p>
-						<p class="highlight">{{__('core.H-abt-p2')}}</p>
-						<p class="highlight">{{__('core.H-abt-p3')}}</p>
+						<p class="{{$text}}" dir="{{$dir}}" lang="{{$lang}}">{{__('core.H-abt-d5')}}</p>
+						<p class="highlight {{$text}}" dir="{{$dir}}" lang="{{$lang}}">{{__('core.H-abt-p1')}}</p>
+						<p class="highlight {{$text}}" dir="{{$dir}}" lang="{{$lang}}">{{__('core.H-abt-p2')}}</p>
+						<p class="highlight {{$text}}" dir="{{$dir}}" lang="{{$lang}}">{{__('core.H-abt-p3')}}</p>
 
 						<div class="row founded">
 							<div class="col-lg-4 col-md-6 col-12">
@@ -140,7 +161,7 @@
 							<img src="{{ asset('front_assets/img/location.svg') }}" alt="" class="h-40">
 						</div>
 						<h4>{{__('core.H-fts-c1-t')}}</h4>
-						<p>{{__('core.H-fts-c1-d')}}</p>
+						<p  dir="{{$dir}}" lang="{{$lang}}">{{__('core.H-fts-c1-d')}}</p>
 		
 					</div>
 				</div>
@@ -150,7 +171,7 @@
 							<img src="{{ asset('front_assets/img/mic.svg') }}" alt="" class="h-40">
 						</div>
 						<h4>{{__('core.H-fts-c2-t')}}</h4>
-						<p>{{__('core.H-fts-c2-d')}}</p>
+						<p  dir="{{$dir}}" lang="{{$lang}}">{{__('core.H-fts-c2-d')}}</p>
 						
 					</div>
 				</div>
@@ -160,17 +181,17 @@
 							<img src="{{ asset('front_assets/img/poweroff.svg') }}" alt="" class="h-40">
 						</div>
 						<h4>{{__('core.H-fts-c3-t')}}</h4>
-						<p>{{__('core.H-fts-c3-d')}}</p>
+						<p  dir="{{$dir}}" lang="{{$lang}}">{{__('core.H-fts-c3-d')}}</p>
 					</div>
 				</div>
-				
+
 				<div class="col-lg-4 col-md-6 col-sm-12">
 					<div class="single-service-area mt-30 wow fadeInLeft" data-wow-delay=".2s">
 						<div class="service-icon">
 							<img src="{{ asset('front_assets/img/speed.svg') }}" alt="" class="h-40">
 						</div>
 						<h4>{{__('core.H-fts-c5-t')}}</h4>
-						<p>{{__('core.H-fts-c5-d')}}</p>
+						<p class="{{$text}}" dir="{{$dir}}" lang="{{$lang}}">{{__('core.H-fts-c5-d')}}</p>
 					</div>
 				</div>
 
@@ -179,8 +200,10 @@
 						<div class="service-icon">
 							<img src="{{ asset('front_assets/img/battery.svg') }}" alt="" class="h-40">
 						</div>
+
 						<h4>{{__('core.H-fts-c7-t')}}</h4>
-						<p>{{__('core.H-fts-c7-d')}}</p>
+						<p dir="{{$dir}}" lang="{{$lang}}">{{__('core.H-fts-c7-d')}}</p>
+
 					</div>
 				</div>
 
@@ -189,8 +212,10 @@
 						<div class="service-icon">
 							<img src="{{ asset('front_assets/img/stolen.svg') }}" alt="" class="h-40">
 						</div>
+
 						<h4>{{__('core.H-fts-c6-t')}}</h4>
-						<p>{{__('core.H-fts-c6-d')}}</p>
+						<p dir="{{$dir}}" lang="{{$lang}}">{{__('core.H-fts-c6-d')}}</p>
+
 					</div>
 				</div>
 
@@ -201,7 +226,7 @@
 							<img src="{{ asset('front_assets/img/fuel.svg') }}" alt="" class="h-40">
 						</div>
 						<h4>{{__('core.H-fts-c8-t')}}</h4>
-						<p>{{__('core.H-fts-c8-d')}}</p>
+						<p dir="{{$dir}}" lang="{{$lang}}">{{__('core.H-fts-c8-d')}}</p>
 					</div>
 				</div>
 
@@ -211,7 +236,7 @@
 							<img src="{{ asset('front_assets/img/safety.svg') }}" alt="" class="h-40">
 						</div>
 						<h4>{{__('core.H-fts-c9-t')}}</h4>
-						<p>{{__('core.H-fts-c9-d')}}</p>
+						<p  dir="{{$dir}}" lang="{{$lang}}">{{__('core.H-fts-c9-d')}}</p>
 					</div>
 				</div>												
 
@@ -269,7 +294,7 @@
 	</div>
 
 	<!--Apps Section-->
-	<section class="parallex our-app section-padding-100" style="background-image: url({{ asset('front_assets/img/image-5.jpg') }})">
+	<section  class="parallex our-app section-padding-100 {{$text}}" dir="{{$dir}}" lang="{{$lang}}" style="background-image: url({{ asset('front_assets/img/image-5.jpg') }})">
         <div class="container">
           <div class="row"> 
             <!-- Section Content -->
@@ -277,7 +302,7 @@
               <div class="col-md-5 col-sm-4">
                   <img alt="" class="img-absolute" src="{{ asset('front_assets/img/phone.png') }}">
               </div>
-              <div class="col-md-7 col-sm-8 ml-auto">
+              <div class="col-md-7 col-sm-8 ml-auto ml-auto-ar">
                 <h3>{{__('core.H-app-t')}}</h3>
                 <p>{{__('core.H-aap-d')}}</p>
                 <ul class="list-inline">
