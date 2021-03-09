@@ -556,7 +556,7 @@
 		padding: 0 30px;
 	}
 
-	[class*="col-12"]:not(:last-child) .single-feature-item {
+	[class*="col-12"] .single-feature-item {
 		margin-bottom: 80px;
 		text-align: center;
 	}
@@ -567,7 +567,6 @@
 
 	.feat-content {
 		padding: 40px;
-		border-top: 1px solid #eee;
 	}
 
 	.testimonial-content p {
@@ -583,7 +582,7 @@
 	}
 
 	.single-service-area {
-		height: 330px;
+		/* height: 330px; */
 	}
 
 	#logistics .single-service-area {

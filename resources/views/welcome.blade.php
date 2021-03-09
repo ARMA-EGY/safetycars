@@ -7,7 +7,7 @@
     <!-- Hero Area -->
  	<div class="homepage-slides owl-carousel">
 
-        <div class="single-slide-item" style="background-image: url({{ asset('front_assets/img/cover.webp') }});">
+        <div class="single-slide-item" style="background-image: url({{ asset('front_assets/img/cover.jpg') }});">
             <div class="overlay"></div>
             <div class="hero-area-content">
                 <div class="container">
@@ -35,13 +35,13 @@
 						<div class="row no-gutters">
 							<div class="col-lg-4 col-md-12 col-12">
 								<div class="feat-icon">
-									<img src="{{ asset('front_assets/img/icon/business.png') }}" alt="">
+									<img src="{{ asset('front_assets/img/car.svg') }}" alt="">
 								</div>
 							</div>
 							<div class="col-lg-8 col-md-12 col-12">
 								<div class="feat-content">
-									<h5>Flat Rate Fees</h5>
-									<p>It is a long established fact that and reader will by the readable based.</p>
+									<h5>Car</h5>
+									<p>Track your car using our easy to use apps.</p>
 								</div>
 							</div>
 						</div>
@@ -52,13 +52,13 @@
 						<div class="row no-gutters">
 							<div class="col-lg-4 col-md-12 col-12">
 								<div class="feat-icon">
-									<img src="{{ asset('front_assets/img/icon/24-hours.png') }}" alt="">
+									<img src="{{ asset('front_assets/img/moto.svg') }}" alt="">
 								</div>
 							</div>
 							<div class="col-lg-8 col-md-12 col-12">
 								<div class="feat-content">
-									<h5>24/7 Tracking</h5>
-									<p>Stay secured around the clock by tracking your vehicle anytime.</p>
+									<h5>Motorcycle</h5>
+									<p>Track your car using our easy to use apps.</p>
 								</div>
 							</div>
 						</div>
@@ -69,12 +69,12 @@
 						<div class="row no-gutters">
 							<div class="col-lg-4 col-md-12 col-12">
 								<div class="feat-icon">
-									<img src="{{ asset('front_assets/img/icon/bounce-rate.png') }}" alt="">
+									<img src="{{ asset('front_assets/img/truck.svg') }}" alt="">
 								</div>
 							</div>
 							<div class="col-lg-8 col-md-12 col-12">
 								<div class="feat-content">
-									<h5>Easy Tools</h5>
+									<h5>Truck</h5>
 									<p>Track your car using our easy to use apps.</p>
 								</div>
 							</div>
@@ -133,11 +133,11 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row justify-content-center">
 				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="single-service-area mt-30 mb-50 wow fadeInLeft" data-wow-delay=".2s">
+					<div class="single-service-area mt-30 wow fadeInLeft" data-wow-delay=".2s">
 						<div class="service-icon">
-							<i class="flaticon-delivery-man"></i>
+							<img src="{{ asset('front_assets/img/location.svg') }}" alt="" class="h-40">
 						</div>
 						<h4>{{__('core.H-fts-c1-t')}}</h4>
 						<p>{{__('core.H-fts-c1-d')}}</p>
@@ -145,9 +145,9 @@
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="single-service-area service-2 mt-30 mb-50 wow fadeInLeft" data-wow-delay=".4s">
+					<div class="single-service-area mt-30 wow fadeInLeft" data-wow-delay=".4s">
 						<div class="service-icon">
-							<i class="flaticon-truck"></i>
+							<img src="{{ asset('front_assets/img/mic.svg') }}" alt="" class="h-40">
 						</div>
 						<h4>{{__('core.H-fts-c2-t')}}</h4>
 						<p>{{__('core.H-fts-c2-d')}}</p>
@@ -155,57 +155,50 @@
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="single-service-area service-3 mt-30 mb-50 wow fadeInLeft" data-wow-delay=".6s">
+					<div class="single-service-area mt-30 wow fadeInLeft" data-wow-delay=".6s">
 						<div class="service-icon">
-							<i class="flaticon-pallet"></i>
+							<img src="{{ asset('front_assets/img/poweroff.svg') }}" alt="" class="h-40">
 						</div>
 						<h4>{{__('core.H-fts-c3-t')}}</h4>
 						<p>{{__('core.H-fts-c3-d')}}</p>
 					</div>
 				</div>
-
+				
 				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="single-service-area service-4 mt-30 wow fadeInLeft" data-wow-delay=".2s">
+					<div class="single-service-area mt-30 wow fadeInLeft" data-wow-delay=".2s">
 						<div class="service-icon">
-							<i class="flaticon-fast-delivery"></i>
-						</div>
-						<h4>{{__('core.H-fts-c4-t')}}</h4>
-						<p>{{__('core.H-fts-c4-d')}}</p>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="single-service-area service-5 mt-30 wow fadeInLeft" data-wow-delay=".4s">
-						<div class="service-icon">
-							<i class="flaticon-air-freight"></i>
+							<img src="{{ asset('front_assets/img/speed.svg') }}" alt="" class="h-40">
 						</div>
 						<h4>{{__('core.H-fts-c5-t')}}</h4>
 						<p>{{__('core.H-fts-c5-d')}}</p>
 					</div>
 				</div>
+
 				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="single-service-area service-6 mt-30 wow fadeInLeft" data-wow-delay=".6s">
+					<div class="single-service-area mt-30 wow fadeInLeft" data-wow-delay=".4s">
 						<div class="service-icon">
-							<i class="flaticon-wholesale"></i>
-						</div>
-						<h4>{{__('core.H-fts-c6-t')}}</h4>
-						<p>{{__('core.H-fts-c6-d')}}</p>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="single-service-area service-6 mt-30 wow fadeInLeft" data-wow-delay=".6s">
-						<div class="service-icon">
-							<i class="flaticon-wholesale"></i>
+							<img src="{{ asset('front_assets/img/battery.svg') }}" alt="" class="h-40">
 						</div>
 						<h4>{{__('core.H-fts-c7-t')}}</h4>
 						<p>{{__('core.H-fts-c7-d')}}</p>
 					</div>
 				</div>
 
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="single-service-area mt-30 wow fadeInLeft" data-wow-delay=".6s">
+						<div class="service-icon">
+							<img src="{{ asset('front_assets/img/stolen.svg') }}" alt="" class="h-40">
+						</div>
+						<h4>{{__('core.H-fts-c6-t')}}</h4>
+						<p>{{__('core.H-fts-c6-d')}}</p>
+					</div>
+				</div>
+
 
 				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="single-service-area service-6 mt-30 wow fadeInLeft" data-wow-delay=".6s">
+					<div class="single-service-area mt-30 wow fadeInLeft" data-wow-delay=".4s">
 						<div class="service-icon">
-							<i class="flaticon-wholesale"></i>
+							<img src="{{ asset('front_assets/img/fuel.svg') }}" alt="" class="h-40">
 						</div>
 						<h4>{{__('core.H-fts-c8-t')}}</h4>
 						<p>{{__('core.H-fts-c8-d')}}</p>
@@ -213,9 +206,9 @@
 				</div>
 
 				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="single-service-area service-6 mt-30 wow fadeInLeft" data-wow-delay=".6s">
+					<div class="single-service-area mt-30 wow fadeInLeft" data-wow-delay=".6s">
 						<div class="service-icon">
-							<i class="flaticon-wholesale"></i>
+							<img src="{{ asset('front_assets/img/safety.svg') }}" alt="" class="h-40">
 						</div>
 						<h4>{{__('core.H-fts-c9-t')}}</h4>
 						<p>{{__('core.H-fts-c9-d')}}</p>
@@ -299,7 +292,7 @@
 </section>
 
 	<!-- FAQ Section  -->
-	<div class="faq-area section-padding">
+	<div class="faq-area section-padding" id="faq">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-10 mt-40 wow fadeInRight" data-wow-delay=".4s">

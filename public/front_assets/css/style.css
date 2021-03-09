@@ -76,6 +76,11 @@ Version: 1.0
 /* Common CSS 
 ============== */
 
+.h-40
+{
+	height: 40px;
+}
+
 html,
 body {
 	height: 100%;
@@ -83,6 +88,10 @@ body {
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
 
 body {
 	font-family: 'Muli', sans-serif;
@@ -1462,7 +1471,7 @@ textarea:focus::-webkit-input-placeholder {
 
 .feat-icon {
 	background: #fff;
-	padding: 65px 30px 50px;
+	padding: 65px 25px 50px;
 	height: 100%;
 	border-radius: 5px 0 0 5px;
 }
@@ -1606,8 +1615,8 @@ textarea:focus::-webkit-input-placeholder {
 
 .single-service-area {
 	text-align: center;
-	height: 320px;
-	padding: 40px;
+	height: 240px;
+    padding: 25px;
 	background: #052435;
 	position: relative;
 	z-index: 1;
@@ -1637,28 +1646,9 @@ textarea:focus::-webkit-input-placeholder {
 }
 
 .single-service-area:before {
-	background-image: url(../img/service/01.jpg);
+	background-image: url(/front_assets/img/image-5.jpg);
 }
 
-.service-2:before {
-	background-image: url(../img/service/03.jpg);
-}
-
-.service-3:before {
-	background-image: url(../img/service/04.jpg);
-}
-
-.service-4:before {
-	background-image: url(../img/service/02.jpg);
-}
-
-.service-5:before {
-	background-image: url(../img/service/05.jpg);
-}
-
-.service-6:before {
-	background-image: url(../img/service/06.jpg);
-}
 
 .single-service-area:before {
 	position: absolute;

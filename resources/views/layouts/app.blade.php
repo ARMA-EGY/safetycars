@@ -148,7 +148,7 @@
                                                     </li>
         
                                                     <li class="nav-item">
-                                                        <a class="nav-link" href="#">{{__('core.FAQ')}}</a>
+                                                        <a class="nav-link" href="{{request()->routeIs('welcome') ? '#faq' : '/#faq' }}">{{__('core.FAQ')}}</a>
                                                     </li>
         
                                                     <li class="nav-item">
@@ -238,9 +238,9 @@
                                     <div class="col-5 offset-lg-2">
                                         <ul>
                                             <li>
-                                                <a href="#">Home</a>
-                                                <a href="#">Products</a>
-                                                <a href="#">FAQ</a>
+                                                <a href="{{route('welcome')}}">Home</a>
+                                                <a href="{{route('products')}}">Products</a>
+                                                <a href="{{request()->routeIs('welcome') ? '#faq' : '/#faq' }}">FAQ</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -248,8 +248,8 @@
                                     <div class="col-5">
                                         <ul>
                                             <li>
-                                                <a href="#">Enterprise</a>
-                                                <a href="#">Contact Us</a>
+                                                <a href="{{route('enterprise')}}">Enterprise</a>
+                                                <a href="{{route('contact')}}">Contact Us</a>
                                             </li>
                                         </ul>
                                     </div>
