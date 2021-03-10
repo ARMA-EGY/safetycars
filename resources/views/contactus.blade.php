@@ -29,7 +29,7 @@
  				<div class="col-lg-12">
  					<div class="breadcroumb-title">
  						<h1>Contact</h1>
- 						<h6><a href="index.html">Home</a> / Contact</h6>
+ 						<h6><a href="{{route('welcome')}}">Home</a> / Contact</h6>
  					</div>
  				</div>
  			</div>
@@ -130,8 +130,11 @@
  		</div>
  	</div>
 
+	<!-- Map Location -->
 
-
+	 <div class="col-12 p-0">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.980472656806!2d31.21057237458165!3d30.008717088358946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145846e34eafccf3%3A0x510e19e8296a6a44!2sGhoneim%20Ln%2C%20Thalethah%2C%20Giza%20District%2C%20Giza%20Governorate!5e0!3m2!1sen!2seg!4v1615353260028!5m2!1sen!2seg" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	</div>
 
 
 @endsection
