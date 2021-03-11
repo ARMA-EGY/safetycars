@@ -76,6 +76,34 @@ Version: 1.0
 /* Common CSS 
 ============== */
 
+.shape-divider 
+{
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.shape-divider-fill 
+{
+    fill: #FFF;
+    transform-origin: center;
+    transform: rotateY(0deg);
+}
+
+.shape-divider[data-position="bottom"], .shape-divider[data-flip-vertical="true"] 
+{
+    transform: rotate(180deg);
+}
+
+.shape-divider[data-position="bottom"] 
+{
+    top: auto;
+    bottom: -1px;
+}
+
 .nav-lang
 {
 	text-transform: none !important;
@@ -1562,7 +1590,7 @@ textarea:focus::-webkit-input-placeholder {
 
 .founded {
 	border-top: 4px solid #eee;
-	border-bottom: 4px solid #eee;
+	/* border-bottom: 4px solid #eee; */
 	padding: 10px;
 }
 
@@ -1627,6 +1655,7 @@ textarea:focus::-webkit-input-placeholder {
 	position: relative;
 	z-index: 1;
 	box-shadow: 0 0 9px 0 rgba(29, 33, 67, 0.10);
+	border-radius: 20px;
 }
 
 
