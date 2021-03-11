@@ -162,9 +162,9 @@
                                                     <li class="nav-item" dir="ltr">
 
                                                         @if (LaravelLocalization::getCurrentLocale() == 'ar')
-                                                            <a class="nav-link" href="#">
+                                                            <a class="nav-link nav-lang" href="#">
                                                                 <img src="{{ asset('front_assets/img/flags/ar.png') }}" style="width: 15px;padding-bottom: 3px;">
-                                                            AR
+                                                            Arabic
                                                                 <span class="sub-nav-toggler">
                                                                 </span>
                                                             </a>
@@ -173,9 +173,9 @@
                                                                 <li><a href="#"><img src="{{ asset('front_assets/img/flags/ar.png') }}" style="width: 15px;padding-bottom: 3px;"> Arabic</a></li>
                                                             </ul>
                                                         @elseif (LaravelLocalization::getCurrentLocale() == 'en')  
-                                                            <a class="nav-link" href="#">
+                                                            <a class="nav-link nav-lang" href="#">
                                                                 <img src="{{ asset('front_assets/img/flags/en.png') }}" style="width: 15px;padding-bottom: 3px;">
-                                                            EN
+                                                            English
                                                                 <span class="sub-nav-toggler">
                                                                 </span>
                                                             </a>

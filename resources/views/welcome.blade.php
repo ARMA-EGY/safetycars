@@ -32,7 +32,7 @@
                                <h1 dir="rtl" lang="ar">{{__('core.H-sld-t1')}}<br> <b>{{__('core.H-sld-t2')}}</b>{{__('core.H-sld-t3')}}</h1>
                                <p>{{__('core.H-sld-d1')}}<br>{{__('core.H-sld-d2')}}</p>
                             </div>
-                            <a href="#" class="main-btn">{{__('core.H-sld-b')}}</a>
+                            <a href="#services" class="main-btn">{{__('core.H-sld-b')}}</a>
                         </div>
                     </div>
                 </div>
@@ -143,7 +143,7 @@
 	</div>
 
 	<!-- Services Area -->
-	<div id="service-1" class="services-area bg-cover section-padding" style="background-image: url({{ asset('front_assets/img/features.jpg') }})">
+	<div id="services" class="services-area bg-cover section-padding" style="background-image: url({{ asset('front_assets/img/features.jpg') }})">
 		<div class="overlay-2"></div>
 		<div class="container">
 			<div class="row">
@@ -265,13 +265,13 @@
 				<div class="col-lg-4 col-md-6 col-sm-12">
 					<div class="single-blog-item wow fadeInLeft" data-wow-delay=".4s">
 						<div class="blog-bg">
-							<img src="{{ asset('front_assets/img/gt06n.png') }}" alt="">
+							<img src="{{ asset('front_assets/img/gt06n.png') }}" alt="gt06n">
 						</div>
 						<div class="blog-content">
-							<h5><a href="#">GT06N </a>
+							<h5><a href="{{route('gt06n')}}">GT06N </a>
 							</h5>
 							<p>There are some reason Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, facilis perferendis ipsam.</p>
-							<a href="#" class="read-more">Read More</a>
+							<a href="{{route('gt06n')}}" class="read-more">Read More</a>
 						</div>
 
 					</div>
@@ -283,12 +283,13 @@
 							<img src="{{ asset('front_assets/img/tk303.png') }}" alt="">
 						</div>
 						<div class="blog-content">
-							<h5><a href="#">TK303</a></h5>
+							<h5><a href="{{route('tk303')}}">TK303</a></h5>
 							<p>There are some reason Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, facilis perferendis ipsam.</p>
-							<a href="#" class="read-more">Read More</a>
+							<a href="{{route('tk303')}}" class="read-more">Read More</a>
 						</div>
 					</div>
 				</div>
+				
 			</div>
 		</div>
 	</div>
@@ -320,7 +321,7 @@
 	<div class="faq-area section-padding" id="faq">
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="col-lg-10 mt-40 wow fadeInRight" data-wow-delay=".4s">
+				<div class="col-lg-7 mt-40 wow fadeInRight" data-wow-delay=".4s">
 					<div class="section-title text-center">
 						<h6>{{__('core.H-faq-t')}}</h6>
 						<h2>{{__('core.H-faq-d1')}} <b>{{__('core.H-faq-d2')}}</b></h2>
@@ -405,6 +406,26 @@
 						</div>
 					</div>
 				</div>
+
+				<div class="col-lg-5 mt-40 wow fadeInRight" data-wow-delay=".6s">
+					<div class="section-title text-center">
+					   <h6>Have any Question?</h6>
+					   <h2>Don't hesitate to contact us</h2>
+				   </div>
+					<div class="question-section">
+						
+						<form action="contact_form">
+							@csrf
+							<input type="text" name="name" id="name" required="" placeholder="{{__('core.ABT-frm-f1')}}" dir="{{$dir}}" lang="{{$lang}}"  required>
+							<input type="email" name="email" id="email" required="" placeholder="{{__('core.ABT-frm-f2')}}" dir="{{$dir}}" lang="{{$lang}}"  required>
+							<input type="number" name="phone" placeholder="{{__('core.ABT-frm-f3')}}" dir="{{$dir}}" lang="{{$lang}}"  required>
+							<input type="hidden" name="subject" value="Contact Us">
+							<textarea name="message" id="message" cols="20" rows="5" required="" placeholder="How can help you?"></textarea>
+							<button type="submit" name="submit">Send Message</button>
+						</form>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</div>

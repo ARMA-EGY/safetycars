@@ -76,6 +76,12 @@ Version: 1.0
 /* Common CSS 
 ============== */
 
+.nav-lang
+{
+	text-transform: none !important;
+	font-weight: inherit !important;
+}
+
 .h-40
 {
 	height: 40px;
@@ -483,7 +489,7 @@ select {
 }
 
 textarea {
-	height: 150px;
+	height: 120px;
 	resize: none;
 }
 

@@ -27,6 +27,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => [ 'l
     Route::get('/products', 'CoreController@products')->name('products');
     Route::get('/enterprise', 'CoreController@enterprise')->name('enterprise');
     Route::get('/contact', 'CoreController@contact')->name('contact');
+    Route::get('/gt06n', 'CoreController@gt06n')->name('gt06n');
+    Route::get('/tk303', 'CoreController@tk303')->name('tk303');
 });
 
 Route::get('/admin', function () {return redirect('/login');});

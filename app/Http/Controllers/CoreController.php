@@ -114,6 +114,38 @@ class CoreController extends Controller
         return view('contactus')->with($data);     
     }
 
+    //======== Product 1 (GT06N) Page ======== 
+    public function gt06n()
+    {
+        $page                         = Page::where('name','Contact')->first();
+        $seo                          = Seo::where('page_token',$page->token)->first();
+        $socials                      = Social::all();
+        
+        $data = [
+            'page_token'=>$page->token,
+            'seo'=>$seo,
+            'socials'=>$socials,
+        ];
+
+        return view('gt06n')->with($data);     
+    }
+
+    //======== Product 2 (TK303) Page ======== 
+    public function tk303()
+    {
+        $page                         = Page::where('name','Contact')->first();
+        $seo                          = Seo::where('page_token',$page->token)->first();
+        $socials                      = Social::all();
+        
+        $data = [
+            'page_token'=>$page->token,
+            'seo'=>$seo,
+            'socials'=>$socials,
+        ];
+
+        return view('tk303')->with($data);     
+    }
+
 
     public function enterprisesubmit(EnterpriseRequest $request)
     {

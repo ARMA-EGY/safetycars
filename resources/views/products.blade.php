@@ -43,13 +43,13 @@
 				<div class="col-lg-4 col-md-6 col-sm-12">
 					<div class="single-blog-item wow fadeInLeft" data-wow-delay=".4s">
 						<div class="blog-bg">
-							<img src="{{ asset('front_assets/img/gt06n.png') }}" alt="">
+							<img src="{{ asset('front_assets/img/gt06n.png') }}" alt="gt06n">
 						</div>
 						<div class="blog-content">
-							<h5><a href="#">GT06N </a>
+							<h5><a href="{{route('gt06n')}}">GT06N </a>
 							</h5>
 							<p>There are some reason Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, facilis perferendis ipsam.</p>
-							<a href="#" class="read-more">Read More</a>
+							<a href="{{route('gt06n')}}" class="read-more">Read More</a>
 						</div>
 
 					</div>
@@ -61,12 +61,13 @@
 							<img src="{{ asset('front_assets/img/tk303.png') }}" alt="">
 						</div>
 						<div class="blog-content">
-							<h5><a href="#">TK303</a></h5>
+							<h5><a href="{{route('tk303')}}">TK303</a></h5>
 							<p>There are some reason Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, facilis perferendis ipsam.</p>
-							<a href="#" class="read-more">Read More</a>
+							<a href="{{route('tk303')}}" class="read-more">Read More</a>
 						</div>
 					</div>
 				</div>
+				
 			</div>
 		</div>
 	</div>
