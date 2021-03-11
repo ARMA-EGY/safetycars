@@ -117,7 +117,7 @@ class CoreController extends Controller
     //======== Product 1 (GT06N) Page ======== 
     public function gt06n()
     {
-        $page                         = Page::where('name','Contact')->first();
+        $page                         = Page::where('name','GT06N')->first();
         $seo                          = Seo::where('page_token',$page->token)->first();
         $socials                      = Social::all();
         
@@ -133,7 +133,7 @@ class CoreController extends Controller
     //======== Product 2 (TK303) Page ======== 
     public function tk303()
     {
-        $page                         = Page::where('name','Contact')->first();
+        $page                         = Page::where('name','TK303')->first();
         $seo                          = Seo::where('page_token',$page->token)->first();
         $socials                      = Social::all();
         

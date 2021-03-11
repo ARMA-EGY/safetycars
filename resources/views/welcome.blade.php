@@ -45,7 +45,8 @@
 	<div class="feature-area">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4 col-md-6 col-12">
+
+				<div class="col-lg-4 col-md-6 col-12 wow fadeInUp animated" data-wow-delay=".3s">
 					<div class="single-feature-item">
 						<div class="row no-gutters">
 							<div class="col-lg-4 col-md-12 col-12">
@@ -64,7 +65,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 col-12">
+
+				<div class="col-lg-4 col-md-6 col-12 wow fadeInUp animated" data-wow-delay=".6s">
 					<div class="single-feature-item">
 						<div class="row no-gutters">
 							<div class="col-lg-4 col-md-12 col-12">
@@ -83,7 +85,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 col-12">
+
+				<div class="col-lg-4 col-md-6 col-12 wow fadeInUp animated" data-wow-delay=".9s">
 					<div class="single-feature-item">
 						<div class="row no-gutters">
 							<div class="col-lg-4 col-md-12 col-12">
@@ -144,13 +147,14 @@
 
 	<!-- Services Area -->
 	<div id="services" class="services-area bg-cover section-padding" style="background-image: url({{ asset('front_assets/img/features.jpg') }})">
+		<div class="shape-divider" data-shape="wave" data-position="top" id="shape-divider-3147"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" class="op-ts op-1"><path class="shape-divider-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path></svg></div>
 		<div class="overlay-2"></div>
-		<div class="container">
+		<div class="container py-4">
 			<div class="row">
 				<div class="offset-lg-2 col-lg-8 text-center">
 					<div class="section-title">
 						<h6>{{__('core.H-fts-t')}}</h6>
-						<h2>{{__('core.H-fts-d1')}}<br><b>{{__('core.H-fts-d2')}}</b></h2>
+						<h2 class="text-white">{{__('core.H-fts-d1')}}<br><b>{{__('core.H-fts-d2')}}</b></h2>
 					</div>
 				</div>
 			</div>
@@ -242,10 +246,11 @@
 
 			</div>
 		</div>
+		<div class="shape-divider" data-shape="wave" data-position="bottom" id="shape-divider-1198"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" class="op-ts op-1"><path class="shape-divider-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path></svg></div>
 	</div>
 
 	<!-- Product Area -->
-	<div class="blog-area gray-bg section-padding">
+	<div class="blog-area section-padding">
 		<div class="container">
 			<div class="row">
 				<div class="offset-lg-2 col-lg-8 text-center">
@@ -289,7 +294,7 @@
 						</div>
 					</div>
 				</div>
-				
+
 			</div>
 		</div>
 	</div>

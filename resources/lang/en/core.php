@@ -29,7 +29,7 @@ return [
     "H-sld-t3" => " Services",
     "H-sld-d1" => " Our Devices provide a full solution to keep your vehicle safe all the time.",
     "H-sld-d2" => "By Protecting you and all types of vehicles from theft.",
-    "H-sld-b" => "Buy Now",
+    "H-sld-b" => "Explore More",
 
 
     "H-sld-c1-t" => "Flat Rate Fees",
