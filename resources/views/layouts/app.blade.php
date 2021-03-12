@@ -228,8 +228,6 @@
                                 <div class="social-area">
                                     <a href=""><i class="lab la-facebook-f"></i></a>
                                     <a href=""><i class="lab la-instagram"></i></a>
-                                    <a href=""><i class="lab la-twitter"></i></a>
-                                    <a href=""><i class="la la-skype"></i></a>
                                 </div>
                             </div>
 
@@ -260,11 +258,21 @@
                             <div class="col-lg-3 offset-lg-1 col-md-6">
                                 <div class="subscribe-form">
                                     <h5>Contact Info</h5>
-                                    <ul class="list-icon text-light">
-                                        <li class="my-2"><i class="fa fa-map-marker"></i> 12 Lotfy Hassona St., Off Tahrir Street, Dokki, Giza, Egypt <br></li>
-                                        <li class="my-2"><i class="fa fa-phone"></i> (+20) 33383949 </li>
-                                        <li class="my-2"><i class="fa fa-envelope"></i> <span>info@safetycars.net</span> </li>
+                                    <ul class="contact_info">
+                                        <li>
+                                            <i class="fa fa-map-marker"></i>
+                                            <p class="mt-0">B 51 of 105 street Maadi Giza</p>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-envelope"></i> 
+                                            <p class="mt-0">info@safetycars.net</p>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-phone"></i>
+                                            <p class="mt-0" dir="ltr">0100 434 7830</p>
+                                        </li>
                                     </ul>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -330,8 +338,6 @@
 						 {}
 			});
 
-        </script>
-        <script>
             $('.contact_form').submit(function(e)
             {
                 e.preventDefault();
@@ -390,9 +396,7 @@
                 });
 
             });
-        </script>
 
-        <script>
             $('.enterprise_form').submit(function(e)
             {
                 e.preventDefault();
@@ -450,9 +454,30 @@
                     
                 });
 
-            });
-        </script>        
-        @yield('script')
+            });  
 
+        </script>
+
+        @yield('script')    
+
+        <!-- GetButton.io widget -->
+        <script type="text/javascript">
+            (function () {
+                var options = {
+                    facebook: "681027978771055", // Facebook page ID
+                    whatsapp: "+201022555666", // WhatsApp number
+                    call_to_action: "Message us", // Call to action
+                    button_color: "#129BF4", // Color of button
+                    position: "right", // Position may be 'right' or 'left'
+                    order: "facebook,whatsapp", // Order of buttons
+                    pre_filled_message: "Contact us", // WhatsApp pre-filled message
+                };
+                var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+                var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+                s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+                var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+            })();
+        </script>
+        <!-- /GetButton.io widget -->
 </body>
 </html>

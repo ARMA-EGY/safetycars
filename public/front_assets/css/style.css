@@ -80,6 +80,34 @@ Version: 1.0
 .pt-75 {padding-top: 75px;}
 .pt-100 {padding-top: 100px;}
 
+.contact_info > li 
+{
+    margin-bottom: 15px;
+    list-style: none;
+	display: block;
+}
+
+.contact_info li i 
+{
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 4px;
+    font-size: 18px;
+    vertical-align: top;
+}
+
+.contact_info i + * 
+{
+    font-size: 14px;
+    color: #d7d7d7 !important;
+    line-height: 26px;
+    margin: 0;
+    vertical-align: middle;
+    max-width: 78%;
+    display: inline-block;
+}
+
 .shape-divider 
 {
     position: absolute;
@@ -2784,6 +2812,7 @@ p.privacy {
 .enterprise_form {
 	padding: 80px 115px;
 	background-color: #FFF;
+	box-shadow: 0 0 5px 1px rgb(0 0 0 / 10%);
 }
 
 .enterprise_form span {
@@ -4005,7 +4034,7 @@ a.reply-btn {
 ============== */
 
 .contact-us-area {
-	background-image: url(../img/contact-bg-1.jpg);
+	/* background-image: url(../img/contact-bg-1.jpg); */
 	background-size: cover;
 	height: 500px;
 	position: relative;
@@ -4013,7 +4042,6 @@ a.reply-btn {
 }
 
 .contact-us-wrapper {
-	background: #fff;
 	margin-top: 50px;
 	position: relative;
 }
@@ -4021,7 +4049,10 @@ a.reply-btn {
 .contact-us-inner {
 	text-align: center;
 	padding: 40px 30px;
-	border-right: 1px solid #eee;
+	/* border-right: 1px solid #eee; */
+	box-shadow: 0 0 5px 1px rgb(0 0 0 / 10%);
+    background: #fff;
+    min-height: 280px;
 }
 
 .contact-us-inner:nth-last-child(4) {
