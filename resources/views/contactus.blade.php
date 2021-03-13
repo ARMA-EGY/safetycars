@@ -43,7 +43,7 @@
  	<div id="contact-us" class="contact-us-area section-padding">
  		<div class="container">
  			<div class="row">
- 				<div class="offset-lg-2 col-lg-8 text-center">
+ 				<div class="col-lg-12 text-center">
  					<div class="section-title">
  						<h6>{{__('core.ABT-t1')}}</h6>
  						<h2>{{__('core.ABT-d1')}}</h2>

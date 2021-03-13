@@ -1,3 +1,18 @@
+@if (LaravelLocalization::getCurrentLocale() == 'ar')
+    @php
+    $dir   = 'rtl';
+    $text  = 'text-right';
+    $inverse_text  = 'text-left';
+    $lang  = 'ar';
+    @endphp
+@elseif (LaravelLocalization::getCurrentLocale() == 'en')  
+    @php
+    $dir    = 'ltr';
+    $text   = '';
+    $inverse_text  = 'text-right';
+    $lang   = 'en';
+    @endphp
+@endif
 
 @extends('layouts.app')
 
@@ -27,7 +42,7 @@
 	<div class="blog-area section-padding">
 		<div class="container">
 			<div class="row">
-				<div class="offset-lg-2 col-lg-8 text-center">
+				<div class="col-lg-12 text-center">
 					<div class="section-title">
 						<h6>{{__('core.H-prd-t')}}</h6>
 						<h2>{{__('core.H-prd-d1')}}  
@@ -49,8 +64,8 @@
 						<div class="blog-content">
 							<h5><a href="{{route('gt06n')}}">GT06N </a>
 							</h5>
-							<p>There are some reason Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, facilis perferendis ipsam.</p>
-							<a href="{{route('gt06n')}}" class="read-more">Read More</a>
+							<p  dir="{{$dir}}">{{__('core.P1-dd1')}}</p>
+							<a href="{{route('gt06n')}}" class="read-more">{{__('core.pd-btn')}}</a>
 						</div>
 
 					</div>
@@ -63,8 +78,8 @@
 						</div>
 						<div class="blog-content">
 							<h5><a href="{{route('tk303')}}">TK303</a></h5>
-							<p>There are some reason Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, facilis perferendis ipsam.</p>
-							<a href="{{route('tk303')}}" class="read-more">Read More</a>
+							<p  dir="{{$dir}}">{{__('core.P1-dd2')}}</p>
+							<a href="{{route('tk303')}}" class="read-more">{{__('core.pd-btn')}}</a>
 						</div>
 					</div>
 				</div>

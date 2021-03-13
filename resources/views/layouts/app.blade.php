@@ -26,7 +26,13 @@
 
     <meta property="og:site_name"     content="Safety Cars"/>
 
-
+    <meta property="og:type"          content="website" />
+    <meta property="og:url"           content="{{request()->getHost()}}/{{request()->path()}}" />
+    <meta property="og:title"         content="SAFETY CARS" />
+    <meta property="og:description"   content="" />
+    <meta property="og:image"         content="{{asset('images/seo.png')}}" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
     
 
     <!--===============================================================================================-->	
@@ -467,7 +473,7 @@
                     facebook: "681027978771055", // Facebook page ID
                     whatsapp: "+201022555666", // WhatsApp number
                     call_to_action: "Message us", // Call to action
-                    button_color: "#129BF4", // Color of button
+                    button_color: "#0198f6", // Color of button
                     position: "right", // Position may be 'right' or 'left'
                     order: "facebook,whatsapp", // Order of buttons
                     pre_filled_message: "Contact us", // WhatsApp pre-filled message

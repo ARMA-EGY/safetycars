@@ -45,7 +45,7 @@
  	<div class="bg-cover section-padding">
  		<div class="container">
  			<div class="row">
- 				<div class="col-lg-8 offset-lg-2 text-center">
+ 				<div class="col-lg-12 text-center">
  					<div class="section-title">
  						<h6>{{__('core.ENT-t')}}</h6>
  						<h2>{{__('core.ENT-d')}}</h2>
