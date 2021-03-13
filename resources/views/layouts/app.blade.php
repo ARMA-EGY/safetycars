@@ -467,7 +467,7 @@
                     facebook: "681027978771055", // Facebook page ID
                     whatsapp: "+201022555666", // WhatsApp number
                     call_to_action: "Message us", // Call to action
-                    button_color: "#129BF4", // Color of button
+                    button_color: "#0198f6", // Color of button
                     position: "right", // Position may be 'right' or 'left'
                     order: "facebook,whatsapp", // Order of buttons
                     pre_filled_message: "Contact us", // WhatsApp pre-filled message
