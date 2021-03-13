@@ -26,7 +26,13 @@
 
     <meta property="og:site_name"     content="Safety Cars"/>
 
-
+    <meta property="og:type"          content="website" />
+    <meta property="og:url"           content="{{request()->getHost()}}/{{request()->path()}}" />
+    <meta property="og:title"         content="SAFETY CARS" />
+    <meta property="og:description"   content="" />
+    <meta property="og:image"         content="{{asset('images/seo.png')}}" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
     
 
     <!--===============================================================================================-->	

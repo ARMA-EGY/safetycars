@@ -70,6 +70,33 @@ Version: 1.0
 @import url('https://fonts.googleapis.com/css?family=Muli:300,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap');
 
 
+/*===================  Start Scroll Bar   ======================*/
+
+/* width */
+::-webkit-scrollbar {
+	width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: transparent; 
+	border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #0099F7; 
+	border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #034ea2; 
+  }
+  
+  /*===================  End Scroll Bar   ======================*/
+
+
 /*	Theme Main Color: #0099F7
 	Theme Secondary Color: #1A1F31*/
 

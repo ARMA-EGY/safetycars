@@ -57,8 +57,8 @@
 							<div class="col-lg-8 col-md-12 col-12">
 								<div class="feat-content">
 
-									<h5>{{__('core.H-sld-c1-t')}} </h5>
-									<p>{{__('core.H-sld-c1-d')}}</p>
+									<h5 class="text-center">{{__('core.H-sld-c1-t')}} </h5>
+									<p class="{{$text}}" dir="{{$dir}}">{{__('core.H-sld-c1-d')}}</p>
 
 								</div>
 							</div>
@@ -77,8 +77,8 @@
 							<div class="col-lg-8 col-md-12 col-12">
 								<div class="feat-content">
 
-									<h5>{{__('core.H-sld-c2-t')}}</h5>
-									<p>{{__('core.H-sld-c2-d')}}</p>
+									<h5 class="text-center">{{__('core.H-sld-c2-t')}}</h5>
+									<p class="{{$text}}" dir="{{$dir}}">{{__('core.H-sld-c2-d')}}</p>
 
 								</div>
 							</div>
@@ -97,8 +97,8 @@
 							<div class="col-lg-8 col-md-12 col-12">
 								<div class="feat-content">
 
-									<h5>{{__('core.H-sld-c3-t')}}</h5>
-									<p>{{__('core.H-sld-c3-d')}}</p>
+									<h5 class="text-center">{{__('core.H-sld-c3-t')}}</h5>
+									<p class="{{$text}}" dir="{{$dir}}">{{__('core.H-sld-c3-d')}}</p>
 
 								</div>
 							</div>
@@ -151,7 +151,7 @@
 		<div class="overlay-2"></div>
 		<div class="container py-4">
 			<div class="row">
-				<div class="offset-lg-2 col-lg-8 text-center">
+				<div class="col-lg-12 text-center">
 					<div class="section-title">
 						<h6>{{__('core.H-fts-t')}}</h6>
 						<h2 class="text-white">{{__('core.H-fts-d1')}}<br><b>{{__('core.H-fts-d2')}}</b></h2>
@@ -275,7 +275,7 @@
 						<div class="blog-content">
 							<h5><a href="{{route('gt06n')}}">GT06N </a>
 							</h5>
-							<p>{{__('core.P1-dd1')}}</p>
+							<p  dir="{{$dir}}">{{__('core.P1-dd1')}}</p>
 							<a href="{{route('gt06n')}}" class="read-more">{{__('core.pd-btn')}}</a>
 						</div>
 
@@ -289,7 +289,7 @@
 						</div>
 						<div class="blog-content">
 							<h5><a href="{{route('tk303')}}">TK303</a></h5>
-							<p>{{__('core.P1-dd2')}}</p>
+							<p  dir="{{$dir}}">{{__('core.P1-dd2')}}</p>
 							<a href="{{route('tk303')}}" class="read-more">{{__('core.pd-btn')}}</a>
 						</div>
 					</div>

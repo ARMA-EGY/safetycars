@@ -80,5 +80,20 @@
         right: unset;
     }
 
+}
+
+@media (min-width: 992px)
+{
+    
+    .offset-lg-1 
+    {
+        margin-right: 8.333333%;
+        margin-left: unset;
+    }
+    
+    .offset-lg-2 {
+        margin-right: 16.666667%;
+        margin-left: unset;
+    }
 
 }
