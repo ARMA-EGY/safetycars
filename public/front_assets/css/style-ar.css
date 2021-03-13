@@ -16,6 +16,21 @@
         padding-right: 35px;
     } 
 
+
+
+
+    .breadcroumb-area .breadcroumb-title h1:before{
+        border-right: 5px solid #0099F7;
+        border-left:unset;
+    }
+
+          .breadcroumb-area .breadcroumb-title h1{
+        padding-right: 35px;
+    } 
+
+
+
+
     .info-content-area p.highlight:before {
         left: unset;
         border-left:unset;
@@ -42,7 +57,9 @@
      margin-left: unset ! important;
 }
 
-
+.styled-faq .panel .panel-heading h6 a i.fa{
+        float: left ! important;
+}
 
 @media only screen and (max-width: 767px)
 {

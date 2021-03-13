@@ -25,11 +25,11 @@
 
  	<div class="breadcroumb-area bread-bg">
  		<div class="container pb-5">
- 			<div class="row">
+ 			<div class="row {{$text}}" dir="{{$dir}}" lang="{{$lang}}">
  				<div class="col-lg-12">
  					<div class="breadcroumb-title">
- 						<h1>Contact</h1>
- 						<h6><a href="{{route('welcome')}}">Home</a> / Contact</h6>
+ 						<h1>{{__('core.CONTACT-US')}}</h1>
+ 						<h6><a href="{{route('welcome')}}">{{__('core.HOME')}}</a> / {{__('core.CONTACT-US')}}</h6>
  					</div>
  				</div>
  			</div>
@@ -72,7 +72,7 @@
  						<div class="contact-us-inner">
  							<div class="info-i"><span><i class="las la-mobile"></i></span></div>
  							<h5>{{__('core.ABT-c3-t')}}</h5>
- 							<p>{{__('core.ABT-c3-d1')}}<br>{{__('core.ABT-c3-d2')}}</p>
+ 							<p>{{__('core.ABT-c3-d1')}}
 
  						</div>
  					</div>

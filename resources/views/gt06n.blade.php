@@ -1,3 +1,18 @@
+@if (LaravelLocalization::getCurrentLocale() == 'ar')
+    @php
+    $dir   = 'rtl';
+    $text  = 'text-right';
+    $inverse_text  = 'text-left';
+    $lang  = 'ar';
+    @endphp
+@elseif (LaravelLocalization::getCurrentLocale() == 'en')  
+    @php
+    $dir    = 'ltr';
+    $text   = '';
+    $inverse_text  = 'text-right';
+    $lang   = 'en';
+    @endphp
+@endif
 
 @extends('layouts.app')
 
@@ -10,7 +25,7 @@
 
  	<div class="breadcroumb-area bread-bg">
         <div class="container">
-            <div class="row">
+            <div class="row {{$text}}" dir="{{$dir}}" lang="{{$lang}}">
                 <div class="col-lg-12">
                     <div class="breadcroumb-title">
                         <h1>GT06N</h1>
@@ -27,55 +42,55 @@
         <div class="container">
             <div class="row justify-content-center">
 
-                <div class="col-lg-10">
+                <div class="col-lg-10 {{$text}}" dir="{{$dir}}" lang="{{$lang}}">
                     <div class="single-service">
                         <img class="d-flex m-auto" src="{{ asset('front_assets/img/gt06n.png') }}" alt="gt06n">
-                        <h2>Description:</h2>
-                        <p>One of the most important features of GBS satellite tracking devices, as they work on ways to protect cars from theft, by providing you with all the data related to your car, the exact location of the car and specified by date and time.</p>
+                        <h2>{{__('core.P1-d')}}</h2>
+                        <p>{{__('core.P1-dd1')}}</p>
                         
-                        <p>GT06N works based on existing GSM / GPRS network and systems and GPS satellites. With this device you can set multiple functions for security, tracking, monitoring, emergency alarms and management.</p>
+                        <p>{{__('core.P1-dd2')}}</p>
                         
-                        <h2>Features:</h2>
+                        <h2>{{__('core.P1-f')}}</h2>
                         <hr>
 
-                        <h5>You can control the stopping and starting of the car remotely:</h5>
-                        <p>This feature enables you to control your car remotely, so that you can stop your car, by cutting off the fuel connection to the car, as the GT06N stops your car and sends you alert notifications.</p>
+                        <h5>{{__('core.P1-f1t')}}</h5>
+                        <p>{{__('core.P1-f1d')}}</p>
                         
                         
-                        <h5>Supports strong 450mA / h battery:</h5>
-                        <p>The GT06N features a high-capacity Li-ion battery that also includes an adequate power supply to the vehicle.</p>
+                        <h5>{{__('core.P1-f2t')}}</h5>
+                        <p>{{__('core.P1-f2d')}}</p>
                         
                         
-                        <h5>Equipped with ACC detection of ignition status:</h5>
-                        <p>The GT06N has a feature that detects ignition conditions and sends you alerts before they happen, making you able to protect your car from the dangers of fires.</p>
+                        <h5>{{__('core.P1-f3t')}}</h5>
+                        <p>{{__('core.P1-f3d')}}</p>
                         
                         
-                        <h5>Supports emergency SOS calls:</h5>
-                        <p>GT06N allows you to make emergency calls in critical situations, by pressing the thumb-sized button on the device for this feature.</p>
+                        <h5>{{__('core.P1-f4t')}}</h5>
+                        <p>{{__('core.P1-f4d')}}</p>
                         
                         
-                        <h5>Equipped with configurable tracking modes:</h5>
-                        <p>Where the device determines the location of a distance that is made by uploading a site after a fixed distance, a specified interval, and a specific angle.</p>
-                        
-                       
-                        
-                        <h5>Supports multiple alarms:</h5>
-                        <p>As the vehicle tracker sends instant alerts in cases of vibration, overspeed, or an alarm to shut down your car, and the geofence system around your car.</p>
+                        <h5>{{__('core.P1-f5t')}}</h5>
+                        <p>{{__('core.P1-f5d')}}</p>
                         
                        
                         
-                        <h5>SMS tracking systems are supported:</h5>
-                        <p>The GT06N sends sms via the Internet or your tablet device, as it informs you of the location of your car at the same time for all the different interfaces that you follow, and it also informs you immediately of any malfunctions or an attempt to steal your car.</p>
+                        <h5>{{__('core.P1-f6t')}}</h5>
+                        <p>{{__('core.P1-f6d')}}</p>
                         
                        
                         
-                        <h5>There is a sound monitoring system:</h5>
-                        <p>Which enables to listen to the areas around the place of the car, and record everything that is going on inside the car and know what is going on in it.</p>
+                        <h5>{{__('core.P1-f7t')}}</h5>
+                        <p>{{__('core.P1-f7d')}}</p>
                         
                        
                         
-                        <h5>Know the car route:</h5>
-                        <p>Where the tracking device allows you to know the route of your cars from where they were and to where they went, and it also enables you to know the route for them during the last three months.</p>
+                        <h5>{{__('core.P1-f8t')}}</h5>
+                        <p>{{__('core.P1-f8d')}}</p>
+                        
+                       
+                        
+                        <h5>{{__('core.P1-f9t')}}</h5>
+                        <p>{{__('core.P1-f9d')}}</p>
                         
                         
                     </div>

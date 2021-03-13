@@ -57,8 +57,8 @@
 							<div class="col-lg-8 col-md-12 col-12">
 								<div class="feat-content">
 
-									<h5>Car</h5>
-									<p>Track your car using our easy to use apps.</p>
+									<h5>{{__('core.H-sld-c1-t')}} </h5>
+									<p>{{__('core.H-sld-c1-d')}}</p>
 
 								</div>
 							</div>
@@ -77,8 +77,8 @@
 							<div class="col-lg-8 col-md-12 col-12">
 								<div class="feat-content">
 
-									<h5>Motorcycle</h5>
-									<p>Track your car using our easy to use apps.</p>
+									<h5>{{__('core.H-sld-c2-t')}}</h5>
+									<p>{{__('core.H-sld-c2-d')}}</p>
 
 								</div>
 							</div>
@@ -97,8 +97,8 @@
 							<div class="col-lg-8 col-md-12 col-12">
 								<div class="feat-content">
 
-									<h5>Truck</h5>
-									<p>Track your car using our easy to use apps.</p>
+									<h5>{{__('core.H-sld-c3-t')}}</h5>
+									<p>{{__('core.H-sld-c3-d')}}</p>
 
 								</div>
 							</div>
@@ -122,7 +122,7 @@
 						<p class="{{$text}}" dir="{{$dir}}" lang="{{$lang}}">{{__('core.H-abt-d5')}}</p>
 						<p class="highlight {{$text}}" dir="{{$dir}}" lang="{{$lang}}">{{__('core.H-abt-p1')}}</p>
 						<p class="highlight {{$text}}" dir="{{$dir}}" lang="{{$lang}}">{{__('core.H-abt-p2')}}</p>
-						<p class="highlight {{$text}}" dir="{{$dir}}" lang="{{$lang}}">{{__('core.H-abt-p3')}}</p>
+
 
 						<div class="row founded">
 							<div class="col-lg-4 col-md-6 col-12">
@@ -275,8 +275,8 @@
 						<div class="blog-content">
 							<h5><a href="{{route('gt06n')}}">GT06N </a>
 							</h5>
-							<p>There are some reason Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, facilis perferendis ipsam.</p>
-							<a href="{{route('gt06n')}}" class="read-more">Read More</a>
+							<p>{{__('core.P1-dd1')}}</p>
+							<a href="{{route('gt06n')}}" class="read-more">{{__('core.pd-btn')}}</a>
 						</div>
 
 					</div>
@@ -289,8 +289,8 @@
 						</div>
 						<div class="blog-content">
 							<h5><a href="{{route('tk303')}}">TK303</a></h5>
-							<p>There are some reason Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, facilis perferendis ipsam.</p>
-							<a href="{{route('tk303')}}" class="read-more">Read More</a>
+							<p>{{__('core.P1-dd2')}}</p>
+							<a href="{{route('tk303')}}" class="read-more">{{__('core.pd-btn')}}</a>
 						</div>
 					</div>
 				</div>
@@ -333,11 +333,11 @@
 					</div>
 					<div class="styled-faq">
 						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-							<div class="panel panel-default">
+							<div class="panel panel-default {{$text}}" dir="{{$dir}}" lang="{{$lang}}">
 								<div class="panel-heading active" role="tab" id="headingOne">
 									<h6 class="panel-title">
 										<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-											When can I expect my delivery?
+											{{__('core.H-faq-q1')}}
 											<i class="fa fa-angle-up"></i>
 											<i class="fa fa-angle-down"></i>
 										</a>
@@ -345,18 +345,16 @@
 								</div>
 								<div id="collapseOne" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingOne">
 									<div class="panel-body">
-										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-										richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-										brunch.
+									{{__('core.H-faq-a1')}}
 									</div>
 								</div>
 							</div>
 
-							<div class="panel panel-default">
+							<div class="panel panel-default  {{$text}}" dir="{{$dir}}" lang="{{$lang}}">
 								<div class="panel-heading" role="tab" id="headingTwo">
 									<h6 class="panel-title">
 										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-											What is the first possible pick-up date?
+											{{__('core.H-faq-q2')}}
 											<i class="fa fa-angle-up"></i>
 											<i class="fa fa-angle-down"></i>
 										</a>
@@ -364,18 +362,16 @@
 								</div>
 								<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 									<div class="panel-body">
-										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-										richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-										brunch.
+											{{__('core.H-faq-a2')}}
 									</div>
 								</div>
 							</div>
 
-							<div class="panel panel-default">
+							<div class="panel panel-default  {{$text}}" dir="{{$dir}}" lang="{{$lang}}">
 								<div class="panel-heading" role="tab" id="headingThree">
 									<h6 class="panel-title">
 										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-											How can I pay for the service?
+										{{__('core.H-faq-q3')}}
 											<i class="fa fa-angle-up"></i>
 											<i class="fa fa-angle-down"></i>
 										</a>
@@ -383,18 +379,16 @@
 								</div>
 								<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 									<div class="panel-body">
-										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-										richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-										brunch.
+										{{__('core.H-faq-a3')}}
 									</div>
 								</div>
 							</div>
 
-							<div class="panel panel-default">
+							<div class="panel panel-default  {{$text}}" dir="{{$dir}}" lang="{{$lang}}">
 								<div class="panel-heading active" role="tab" id="headingSeven">
 									<h6 class="panel-title">
 										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-											How can I collect my parcel in the parcel shop?
+											{{__('core.H-faq-q4')}}
 											<i class="fa fa-angle-up"></i>
 											<i class="fa fa-angle-down"></i>
 										</a>
@@ -402,20 +396,37 @@
 								</div>
 								<div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
 									<div class="panel-body">
-										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-										richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-										brunch.
+									{{__('core.H-faq-a4')}}
 									</div>
 								</div>
 							</div>
+
+
+							<div class="panel panel-default  {{$text}}" dir="{{$dir}}" lang="{{$lang}}">
+								<div class="panel-heading active" role="tab" id="headingSeven">
+									<h6 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+											{{__('core.H-faq-q5')}}
+											<i class="fa fa-angle-up"></i>
+											<i class="fa fa-angle-down"></i>
+										</a>
+									</h6>
+								</div>
+								<div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+									<div class="panel-body">
+									{{__('core.H-faq-a5')}}
+									</div>
+								</div>
+							</div>
+
 						</div>
 					</div>
 				</div>
 
 				<div class="col-lg-5 mt-40 wow fadeInRight" data-wow-delay=".6s">
 					<div class="section-title text-center">
-					   <h6>Have any Question?</h6>
-					   <h2>Don't hesitate to contact us</h2>
+					   <h6>{{__('core.H-contact-t')}}</h6>
+					   <h2>{{__('core.H-contact-d')}}</h2>
 				   </div>
 					<div class="question-section">
 						
@@ -425,8 +436,8 @@
 							<input type="email" name="email" id="email" required="" placeholder="{{__('core.ABT-frm-f2')}}" dir="{{$dir}}" lang="{{$lang}}"  required>
 							<input type="number" name="phone" placeholder="{{__('core.ABT-frm-f3')}}" dir="{{$dir}}" lang="{{$lang}}"  required>
 							<input type="hidden" name="subject" value="Contact Us">
-							<textarea name="message" id="message" cols="20" rows="5" required="" placeholder="How can help you?"></textarea>
-							<button type="submit" name="submit">Send Message</button>
+							<textarea name="message" dir="{{$dir}}" lang="{{$lang}}" id="message" cols="20" rows="5" required="" placeholder="{{__('core.ABT-frm-f5')}}"></textarea>
+							<button type="submit" name="submit">{{__('core.ABT-frm-btn')}}</button>
 						</form>
 					</div>
 				</div>

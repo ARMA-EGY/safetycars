@@ -1,3 +1,22 @@
+@if (LaravelLocalization::getCurrentLocale() == 'ar')
+    @php
+    $dir   = 'rtl';
+    $text  = 'text-right';
+    $inverse_text  = 'text-left';
+    $lang  = 'ar';
+    @endphp
+@elseif (LaravelLocalization::getCurrentLocale() == 'en')  
+    @php
+    $dir    = 'ltr';
+    $text   = '';
+    $inverse_text  = 'text-right';
+    $lang   = 'en';
+    @endphp
+@endif
+
+
+
+
 
 @extends('layouts.app')
 
@@ -10,11 +29,11 @@
 
  	<div class="breadcroumb-area bread-bg">
 		<div class="container pb-5">
-			<div class="row">
+			<div class="row {{$text}}" dir="{{$dir}}" lang="{{$lang}}">
 				<div class="col-lg-12">
 					<div class="breadcroumb-title">
-						<h1>Enterprise</h1>
-						<h6><a href="{{route('welcome')}}">Home</a> / Enterprise</h6>
+						<h1>{{__('core.ENTERPRISE')}}</h1>
+						<h6><a href="{{route('welcome')}}">{{__('core.HOME')}}</a> / {{__('core.ENTERPRISE')}}</h6>
 					</div>
 				</div>
 			</div>
@@ -28,31 +47,31 @@
  			<div class="row">
  				<div class="col-lg-8 offset-lg-2 text-center">
  					<div class="section-title">
- 						<h6>Quotation</h6>
- 						<h2>Get Free<b> Quotation</b> for <br>Your <b>Choice</b></h2>
+ 						<h6>{{__('core.ENT-t')}}</h6>
+ 						<h2>{{__('core.ENT-d')}}</h2>
  					</div>
  				</div>
  			</div>
  			<div class="quotation-block">
-				<form class="enterprise_form">
+				<form class="enterprise_form" dir="{{$dir}}" lang="{{$lang}}">
 					@csrf
 					<div class="row">
 						<div class="col-lg-4 col-sm-6">
-							<div class="form-group">
-								<label for="name">Name</label>
-								<input type="text" name="name" class="form-control" id="name" placeholder="Full Name" required>
+							<div class="form-group {{$text}}" dir="{{$dir}}" lang="{{$lang}}">
+								<label for="name">{{__('core.ABT-frm-f1')}}</label>
+								<input type="text" name="name" class="form-control" id="name" placeholder="{{__('core.ENT-frm-p1')}}" required>
 							</div>
 						</div>
 						<div class="col-lg-4 col-sm-6">
-							<div class="form-group">
-								<label for="email">Email</label>
-								<input type="email"  name="email" class="form-control" id="email" placeholder="Email" required>
+							<div class="form-group {{$text}}" dir="{{$dir}}" lang="{{$lang}}">
+								<label for="email">{{__('core.ABT-frm-f2')}}</label>
+								<input type="email"  name="email" class="form-control" id="email" placeholder="{{__('core.ABT-frm-f2')}}" dir="{{$dir}}" lang="{{$lang}}" required>
 							</div>
 						</div>
 						<div class="col-lg-4">
-							<div class="form-group">
-								<label for="phone">Phone No.</label>
-								<input type="number"  name="phone" class="form-control" id="phone" placeholder="Phone No." required>
+							<div class="form-group {{$text}}" dir="{{$dir}}" lang="{{$lang}}">
+								<label for="phone">{{__('core.ABT-frm-f3')}}</label>
+								<input type="number"  name="phone" class="form-control" id="phone" placeholder="{{__('core.ABT-frm-f3')}}" dir="{{$dir}}" lang="{{$lang}}" required>
 							</div>
 						</div>
 					</div>
@@ -60,20 +79,20 @@
 					<div class="row">
 						
 						<div class="col-lg-5">
-							<div class="form-group">
-								<label>Company Name</label>
-								<input type="text" name="company" class="form-control" id="company" placeholder="Company Name" required>
+							<div class="form-group {{$text}}" dir="{{$dir}}" lang="{{$lang}}">
+								<label>{{__('core.ENT-frm-f4')}}</label>
+								<input type="text" name="company" class="form-control" id="company" placeholder="{{__('core.ENT-frm-f4')}}" required>
 							</div>
 						</div>
 						<div class="col-lg-3">
-							<div class="form-group">
-								<label>Number Of Devices</label>
-								<input type="number" class="form-control" name="device_num" placeholder="No. Devices" required>
+							<div class="form-group {{$text}}" dir="{{$dir}}" lang="{{$lang}}">
+								<label>{{__('core.ENT-frm-f5')}}</label>
+								<input type="number" class="form-control" name="device_num" placeholder="{{__('core.ENT-frm-f5')}}" required >
 							</div>
 						</div>
 						<div class="col-lg-4">
 							<div class="request-button">
-								<button type="submit" class="main-btn">Send Request<i class="las la-arrow-right"></i></button>
+								<button type="submit" class="main-btn">{{__('core.ENT-frm-btn')}}<i class="las  {{__('core.ENT-frm-arrow')}}"></i></button>
 							</div>
 						</div>
 					</div>
@@ -83,7 +102,7 @@
 
  				
  				<div class="quotation-dtl text-white">
- 					<p><i class="las la-mobile"></i>We are available at Mon-Fri call us + 212-4000-300 during regular business hours</p>
+ 					<p><i class="las la-mobile"></i>{{__('core.ENT-msg')}}</p>
  				</div>
  			</div>
  		</div>
